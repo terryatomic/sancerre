@@ -24,6 +24,10 @@
   background: #E0BA5C;
 }
 
+.has-rust-background-color {
+  background: #BF6B33;
+}
+
 .has-white-color {
   color: #FFFFFF;
 }
@@ -54,6 +58,10 @@
 
 .has-dark-gray-color {
   color: #4D4D4D;
+}
+
+.has-rust-color {
+  color: #BF6B33;
 }
 
 /*!
@@ -718,7 +726,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1220px;
   }
 }
 .row {
@@ -15021,7 +15029,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 :root {
-  --wp--style--global--content-size: 1320px;
+  --wp--style--global--content-size: 1220px;
 }
 
 body {
@@ -15063,12 +15071,11 @@ h1 em, .h1 em, h2 em, .h2 em, h3 em, .h3 em, h4 em, .h4 em, h5 em, .h5 em, h6 em
 }
 
 h1, .h1 {
-  font-size: 46px;
+  font-size: 52px;
   font-style: normal;
   font-weight: 400;
-  line-height: 54px;
+  line-height: 60px;
   /* 107.143% */
-  text-transform: uppercase;
   padding-bottom: 20px;
   padding-top: 20px;
   margin-bottom: 0px;
@@ -15079,7 +15086,11 @@ h2, .h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
+}
+h2.h2-big, .h2-big.h2 {
+  font-size: 52px;
+  line-height: 60px;
 }
 
 .h2-small {
@@ -15339,6 +15350,15 @@ hr {
   padding-left: 0;
 }
 
+.contact-us form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-us .gform_wrapper.gravity-theme .gform_footer {
+  align-items: center;
+  justify-content: center;
+}
+
 .secondary-hero {
   padding: 0;
   min-height: 730px;
@@ -15464,13 +15484,15 @@ hr {
 }
 .card-block .wp-block-column {
   padding: 24px;
-  border: 2px solid #E0BA5C;
   display: flex;
   flex-direction: column;
+  background: white;
 }
-.card-block .wp-block-column .wp-block-column {
-  padding: 0px;
-  border: none;
+.card-block .wp-block-column.explore-image-container {
+  padding: 0;
+}
+.card-block .wp-block-column p {
+  font-family: "Montserrat", sans-serif;
 }
 .card-block .wp-block-columns {
   margin-bottom: 0px;
@@ -16886,7 +16908,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
-    max-width: 1320px;
+    max-width: 1220px;
   }
 }
 body.understrap-no-sidebar .alignwide,

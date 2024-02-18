@@ -36,6 +36,10 @@ $dark-gray: #4D4D4D;
   background: $gold;
 }
 
+.has-rust-background-color {
+  background: $rust;
+}
+
 .has-white-color {
   color: $white;
 }
@@ -66,4 +70,8 @@ $dark-gray: #4D4D4D;
 
 .has-dark-gray-color {
   color: $dark-gray;
+}
+
+.has-rust-color {
+  color: $rust;
 }

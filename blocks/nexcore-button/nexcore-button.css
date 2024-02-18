@@ -1,0 +1,120 @@
+.button-container {
+	position: relative;
+}
+
+.button-container.aligncenter {
+	text-align: center;
+}
+
+.button-custom, .phone-button, .arrow-button, .outline-button, .email-button, .contact-button {
+	display: inline-flex;
+	padding: .8rem 1rem;
+	background-color: #86A5A9;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	/* 109.091% */
+	letter-spacing: 1.76px;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+}
+
+.email-button, .phone-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-custom:hover,
+.phone-button:hover,
+.arrow-button:hover,
+.email-button:hover,
+.outline-button:hover {
+	cursor: pointer;
+	color: #fff;
+	background-color: #617E82;
+}
+
+.outline-button {
+	background-color: unset;
+	border: 1px solid #86A5A9;
+	margin-bottom: 10px;
+}
+
+.outline-button a {
+	text-decoration: none;
+}
+
+.icon-link {
+	position: relative;
+}
+
+.svg-icon {
+	display: inline-block;
+	width: 18px;
+	/* adjust as per your SVG's size */
+	height: 18px;
+	/* adjust as per your SVG's size */
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	/* top: 50%; */
+	left: auto;
+	/* transform: translateY(-50%); */
+	filter: brightness(0) invert(1);
+}
+
+.arrow-button {
+	padding-right: 37px;
+}
+
+.arrow-button .svg-icon {
+	right: 10px;
+	left: unset;
+	position: absolute;
+	top: 50%;
+	left: auto;
+	transform: translateY(-50%);
+	margin-top: 2px;
+}
+
+.phone-button {
+	padding-left: 35px;
+}
+
+.email-button .svg-icon {
+	margin-right: 8px;
+	top: 3px;
+}
+
+.phone-button .svg-icon, .email-button .svg-icon {
+	width: 22px;
+	height: 22px;
+}
+
+.icon-link.right .svg-icon {
+	left: unset;
+	right: 10px;
+}
+
+.icon-link.right {
+	padding-right: 37px;
+}
+
+.icon-link.left {
+	padding-left: 37px;
+}
+
+@media (max-width:992px) {
+	.button-custom, .phone-button, .arrow-button, .email-button, .outline-button, .icon-link.right, .icon-link.left {
+		padding: 16px 30px;
+	}
+
+	.svg-icon {
+		display: none;
+	}
+}

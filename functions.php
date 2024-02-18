@@ -131,6 +131,7 @@ function nexcore_register_acf_blocks() {
      * @link https://developer.wordpress.org/reference/functions/register_block_type/
      */
     register_block_type( __DIR__ . '/blocks/sancerre-button' );
+    register_block_type( __DIR__ . '/blocks/nexcore-button' );
 	register_block_type( __DIR__ . '/blocks/mobile-only-block' );
 	register_block_type( __DIR__ . '/blocks/responsive-image' );
 	register_block_type( __DIR__ . '/blocks/background-pattern-block' );
@@ -187,7 +188,7 @@ add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
     $uri = get_stylesheet_directory_uri();
     $uri_image = $uri . "/img/arrows.svg";
-    return "<button class='button gform_button arrow-button' id='gform_submit_button_{$form['id']}'><span class='svg-icon' style=\"background-image: url('{$uri_image}');\"></span>Submit</button>";
+    return "<button class='button gform_button contact-button' id='gform_submit_button_{$form['id']}'>Submit</button>";
 }
 
 
@@ -411,6 +412,11 @@ function sancerre_after_setup() {
 			'name'  => __( 'Dark Gray', 'understrap-child' ),
 			'slug'  => 'dark-gray',
 			'color'	=> '#4D4D4D',
+		),
+        array(
+			'name'  => __( 'Rust', 'understrap-child' ),
+			'slug'  => 'rust',
+			'color'	=> ' #BF6B33',
 		),
     ) );
 }
