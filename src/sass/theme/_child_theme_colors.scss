@@ -1,0 +1,69 @@
+$charcoal: #4D545E;
+$blue: #86A5A9;
+$blue-dark: #617E82;
+$gold: #E0BA5C;
+$hover: #804E0E;
+$beige: #ECE6DA;
+$primary: $charcoal;
+$white: #FFFFFF;
+$black: #000000;
+$rust: #BF6B33;
+$dark-navy: #334252;
+$dark-gray: #4D4D4D;
+
+
+.has-white-background-color {
+  background: $white;
+}
+
+.has-black-background-color {
+  background: $black;
+}
+
+.has-blue-background-color {
+  background: $blue;
+}
+
+.has-charcoal-background-color {
+  background: $charcoal;
+}
+
+.has-beige-background-color {
+  background: $beige;
+}
+
+.has-gold-background-color {
+  background: $gold;
+}
+
+.has-white-color {
+  color: $white;
+}
+
+.has-black-color {
+  color: $black;
+}
+
+.has-blue-color {
+  color: $blue;
+}
+
+.has-beige-color {
+  color: $beige;
+}
+
+.has-charcoal-color {
+  color: $charcoal;
+}
+
+.has-gold-color {
+  color: $gold;
+}
+
+.has-dark-navy-color {
+  color: $dark-navy;
+}
+
+.has-dark-gray-color {
+  color: $dark-gray;
+}

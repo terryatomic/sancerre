@@ -1,0 +1,63 @@
+{
+    "key": "group_6570e67cca691",
+    "title": "Block: Footer",
+    "fields": [
+        {
+            "key": "field_6570e67da903a",
+            "label": "Footer Block",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "To edit the default footer block please click the link on the admin bar called \"Edit Patterns\" if you would like to create a custom footer based on the default footer add it as a pattern and then open the document outline icon on the top left, select the option menu for \"default footer\" and select \"Detatch Pattern\"",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6570e77ca903b",
+            "label": "Custom Footer",
+            "name": "custom_footer",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/footer-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1707877012
+}

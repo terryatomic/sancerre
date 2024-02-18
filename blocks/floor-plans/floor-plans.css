@@ -1,0 +1,130 @@
+
+/*Floor Plans*/
+
+.floor-plans {
+	padding: 2.5rem 0;
+}
+
+.floor-plans--heading {
+	text-align: center;
+}
+
+.floor-plans--subheading {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 109.091% */
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    padding-top: 24px;
+}
+.floor-plans--subheading span{
+    font-size: 16px;
+}
+.floor-plans--grid {
+	max-width: 60rem;
+	margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+	.floor-plans--grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1.875rem;
+	}
+}
+
+.floor-plans--plan {
+	border: 1px solid #D3D5D6;
+	padding: 0 1.25rem;
+	text-align: center;
+	position: relative;
+	padding-bottom: 70px;
+	margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 1024px) {
+	.floor-plans--plan {
+		margin-bottom: 0rem;
+	}
+}
+.floor-plans--thumbnail {
+	max-width: 16.25rem;
+	margin: 0 auto 0.9375rem;
+}
+
+.floor-plans--price-number {
+	font-family: 'swear-text', sans-serif;
+	font-size: 1.625rem;
+    margin-bottom: -0.25rem;
+    color: #996D33;
+}
+
+.floor-plans--price-label {
+	font-family: 'termina', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.8125rem;
+	margin-bottom: -0.625rem;
+    letter-spacing: .22rem;
+}
+
+.floor-plans--beds, .floor-plans--feet {
+	font-family: 'termina', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1rem;
+	padding-top: 10px;
+}
+
+.floor-plans--cta {
+	margin-left: -1.25rem;
+	margin-right: -1.25rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.floor-plans--cta .button {
+	display: block;
+	width: 100%;
+	padding-top: 0.5375rem;
+	padding-bottom: 0.5375rem;
+    color: #fff;
+    background-color: #996D33;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 109.091% */
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+}
+.floor-plans--cta .button:hover {
+    background-color: #804E0E;
+}
+
+.floor-plans .js-tablist {
+	border-top: 1px solid #D3D5D6;
+	border-bottom: 1px solid #D3D5D6;
+	margin-left: -0.9375rem;
+	margin-right: -0.9375rem;
+	justify-content: center;
+}
+
+.floor-plans .esl-tabs-tabs__content {
+	padding: 2.5rem;
+}
+
+.floor-plans .js-tablist__item {
+	border: 0;
+	flex-grow: 0;
+}
+
+.floor-plans [aria-selected="true"].esl-tabs-tabs__link {
+	background: #ffffff;
+	border-bottom: 2px solid #D25229;
+	color: #D25229;
+}

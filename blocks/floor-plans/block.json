@@ -1,0 +1,14 @@
+{
+    "name": "acf/floor-plans",
+    "title": "Floor Plan Selector",
+    "description": "",
+    "style": [ "file:./floor-plans.css" ],
+    "category": "esl-blocks",
+    "icon": "<svg id=\"Layer_2\" data-name=\"Layer 2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 62.58 57.12\">\n  <defs>\n    <style>\n      .cls-1 {\n        fill: #414042;\n      }\n    </style>\n  </defs>\n  <g id=\"Layer_1_1:1_\" data-name=\"Layer 1 (1:1)\">\n    <g>\n      <polygon class=\"cls-1\" points=\"30.86 0 5.11 22.89 5.11 25.75 30.86 2.86 30.86 0\"/>\n      <polygon class=\"cls-1\" points=\"0 35.08 0 37.94 25.75 15.04 25.75 12.18 0 35.08\"/>\n      <polygon class=\"cls-1\" points=\"5.11 37.64 5.11 40.51 30.86 17.61 30.86 14.75 5.11 37.64\"/>\n      <polygon class=\"cls-1\" points=\"5.11 45.02 5.11 47.88 30.86 24.99 30.86 22.13 5.11 45.02\"/>\n      <polygon class=\"cls-1\" points=\"28.88 31.36 3.13 54.25 3.13 57.12 28.88 34.22 28.88 31.36\"/>\n      <polygon class=\"cls-1\" points=\"56.72 22.89 32.94 1.76 32.94 4.62 56.72 25.75 56.72 22.89\"/>\n      <polygon class=\"cls-1\" points=\"56.72 30.27 32.94 9.13 32.94 11.99 56.72 33.13 56.72 30.27\"/>\n      <polygon class=\"cls-1\" points=\"62.58 43.16 38.81 22.02 38.81 24.88 62.58 46.02 62.58 43.16\"/>\n      <polygon class=\"cls-1\" points=\"56.72 45.02 32.94 23.88 32.94 26.74 56.72 47.88 56.72 45.02\"/>\n      <polygon class=\"cls-1\" points=\"56.72 52.4 32.94 31.26 32.94 34.12 56.72 55.26 56.72 52.4\"/>\n    </g>\n  </g>\n</svg>",
+    "keywords": ["text", "floor plans"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "floor-plans.php"
+    },
+    "align": "full"
+}

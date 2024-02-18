@@ -1,0 +1,143 @@
+
+/**
+ * Accordion v3.3.4
+ * Lightweight and accessible accordion module created in pure Javascript
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright (c) Michał Strumpf
+ * Published under MIT License
+ */
+ .ac > .ac-q::after {
+	text-align: center;
+	width: 15px;
+	right: 10px;
+	top: 50%;
+	transform: translate(0, -50%);
+	position: absolute;
+}
+
+.ac > .ac-a {
+	overflow: hidden;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+
+.accordion {
+	padding-bottom: 80px;
+}
+
+
+
+.accordion--heading {
+	margin-bottom: 3.125rem;
+	text-align: center;
+	display: none;
+}
+
+.accordion--row {
+	border: 1px solid #D3D5D6;
+	border-bottom: none;
+	/* padding-bottom: 0.625rem; */
+	transition: .25s all ease;
+}
+.accordion--row:last-of-type{
+	border-bottom: 1px solid #D3D5D6;
+}
+.accordion--row.is-active {
+	background: #252728;
+	color: #ffffff;
+}
+
+.accordion--row.is-active .accordion--title {
+	color: #ffffff;
+}
+
+.accordion button {
+	background-color: transparent;
+	color:  #996D33;
+
+    /* desktop H4 */
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 109.091% */
+    letter-spacing: 1.76px;
+    text-transform:inherit;
+    padding: 24px;
+    width: 100%;
+    text-align: left;
+    padding-right: 75px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.accordion button {
+		font-size: 22px;
+	}
+}
+
+
+.accordion--title {
+	cursor: pointer;
+	position: relative;
+	border: 0;
+	padding-right: 4.6875rem;
+}
+
+.accordion--title:before {
+	content: "";
+	background-image: url(images/arrow.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	transition: .25s all ease;
+}
+
+@media only screen and (min-width: 1024px) {
+	.accordion--title:before {
+		top: 25px;
+	}
+}
+
+.accordion .is-active .accordion--title:before {
+	transform: rotate(180deg);
+	background-image: url(images/arrow-white.svg);
+}
+
+.accordion .is-active .accordion--title:before svg {
+	fill: #fff;
+}
+
+.accordion ul {
+	margin: 0 0 1.5625rem;
+	padding: 0 0 0 0.9375rem;
+}
+
+.accordion .text-wrap {
+	padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+}
+
+
+.accordion .ac-a {
+	padding: 0 24px;
+}
+
+.accordion .active .ac-a {
+	margin: 1.25rem 0;
+}
+
+.accordion a {
+	color: #ffffff;
+}
+.accordion a:hover {
+	color: #acacac;
+    text-decoration: underline;
+    cursor: pointer;
+}

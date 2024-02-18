@@ -1,0 +1,145 @@
+
+/*Community Jump Nav*/
+.jump-links-container{
+    position: relative;
+    left: 0px;
+    z-index: 999;
+    
+}
+.community-nav {
+    display: none;
+    background-color: #fff;
+}
+.community-nav a {
+	display: block;
+	padding: 18px;
+	text-decoration: none;
+	flex-grow: 1;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .25s background ease;
+
+    color: #996D33;
+/* desktop H4 */
+font-family: 'Lato', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 109.091% */
+letter-spacing: 1.76px;
+text-transform: uppercase;
+}
+
+.community-nav a:hover {
+	background: #252728;
+    color: #fff;
+}
+.sectional-nav-container{
+    position: relative;
+}
+#sectional_nav{
+    border-radius: 0px;
+    border: none;
+}
+
+#sectional_nav{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+#sectional_nav li a{
+    color: #fff; 
+    display: block;
+    width: 100%;   
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    background-color: #996D33;
+
+}
+#select-topic-link{
+    position: relative;
+    z-index: 2;
+}
+#select-topic-link::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: rotate(180deg);
+    transform-origin: 42% 50%;
+    right: 10px; /* Adjust based on your layout */
+    top: calc(50% - 15px); /* Center vertically */
+    background: url('img/angle-down-light.svg') no-repeat; /* Add your arrow image */
+    background-position: right 10px center; /* Adjust as needed */
+    background-size: 15px; /* Adjust the size of your arrow */
+    z-index: 1;
+    transition: all .25s ease;
+   
+}
+.item-active::after{
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50%;
+    transition: all .25s ease;
+}
+#sectional_nav .community-drop-menu li a{
+    color: #996D33;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    border: 2px solid #996D33;
+    border-bottom: 0px;
+}
+#sectional_nav .community-drop-menu li:last-child a{
+    border-bottom: 2px solid #996D33;
+}
+.community-drop-menu{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+    background-color: #fff;
+}
+.sub-menu-active{
+    top: 52px;
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease;
+}
+@media only screen and (min-width: 992px) {
+	.community-nav {
+		display: flex;
+		justify-content: stretch;
+	}
+    .community-nav a {
+        font-size: 16px;
+    }
+    .sectional-nav-container{
+        display: none;
+    }
+    .jump-links-container{
+        border: 2px solid #996D33;
+    }
+}
+@media only screen and (min-width: 1350px) {
+    .community-nav a {
+        font-size: 22px;
+        padding: 24px 32px;
+    }
+}

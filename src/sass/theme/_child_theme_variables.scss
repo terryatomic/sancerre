@@ -1,0 +1,22 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+$charcoal: #4D545E;
+$blue: #86A5A9;
+$blue-dark: #617E82;
+$gold: #E0BA5C;
+$hover: #804E0E;
+$beige: #ECE6DA;
+$primary: $charcoal;
+$white: #FFFFFF;
+$black: #000000;
+$rust: #BF6B33;
+
+// Once we've changed the value, we'll also make it the primary brand color.
+$bs-border-width: 0px;
+$max_width: 1320px;
+$pagination-bg: #fff;
+$pagination-border-radius: 0px;
+$grid-breakpoints: (xs: 0, sm: 992px, md: 992px, lg: 992px, xl: 1200px, xxl: 1200px);

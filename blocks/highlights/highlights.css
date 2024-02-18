@@ -1,0 +1,34 @@
+
+
+.highlights--heading {
+	text-align: center;
+}
+.highlights h3{
+    font-size: 26px;
+}
+.highlights--grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+}
+
+.highlights--highlight {
+	border: 1px solid #383F42;
+	padding: 2.5rem 2.5rem 2.5rem;
+	text-align: center;
+	width: 100%;
+}
+.highlights--highlight p{
+	margin-bottom: 0px;
+}
+@media only screen and (min-width: 1024px) {
+	.highlights--highlight {
+		width: auto;
+		flex: 0 0 calc(33% - 25px);
+	}
+	.highlights h3{
+		font-size: 32px;
+	}
+}
+

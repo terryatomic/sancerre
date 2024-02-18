@@ -1,0 +1,20 @@
+.community-header-container .wp-block-columns{
+    background-color: #ECE6DA;
+}
+.community-header-container .alignfull {
+    gap: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.community-header-container .wp-block-columns .container{
+    padding: 0 50px;
+}
+.community-header-container h3{
+    font-size: 22px;
+    padding-top: 0px;
+}
+@media (min-width: 992px) {
+    .community-header-container .wp-block-columns .container{
+        padding: 0 75px;
+    }
+}

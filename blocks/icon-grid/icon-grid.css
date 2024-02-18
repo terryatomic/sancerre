@@ -1,0 +1,51 @@
+
+.icon-grid--grid {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin: auto;
+    gap: 48px;
+    padding-top: 60px;
+}
+.icon-grid--icon{
+    flex: 0 0 20%;
+}
+@media only screen and (max-width: 1024px) {
+	.icon-grid--grid {
+        gap: 32px;
+    }
+    .icon-grid--icon{
+        flex: 0 0 40%;
+    }
+    .icon-grid--label {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+.icon-grid--icon img {
+	margin: auto;
+	height: 105px;
+	width: auto;
+	display: block;
+}
+
+.icon-grid--label {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 16px 0px;
+
+}
+
+
+.icon-grid--disclaimer {
+	text-align: center;
+	margin-top: 2.1875rem;
+}

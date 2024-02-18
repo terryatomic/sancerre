@@ -1,0 +1,112 @@
+
+.team {
+	padding: 0px;
+}
+
+.team--heading {
+	text-align: center;
+	max-width: 56.25rem;
+	margin: 0 auto 1.5625rem;
+}
+
+.team--text {
+	text-align: center;
+	max-width: 56.25rem;
+	margin: 0 auto 1.5625rem;
+}
+
+.team--grid {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	margin: 3.125rem 0 0;
+	gap: 1.875rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.team--grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.team--grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	.team--copy {
+		padding: 0.9375rem 0 0.9375rem;
+	}
+}
+
+.team--photo {
+	border-bottom: 1px solid #383F42;
+	height: 25rem;
+	position: relative;
+    overflow: hidden;
+	background-color: #ECE6DA;
+}
+
+.team--photo img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+.team--bio {
+	max-height: 0;
+	overflow: hidden;
+	background: rgba(162, 114, 52, 0.95);
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	transition: .35s all ease;
+    padding: 0 1.5625rem;
+	justify-content: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 150% */
+}
+
+.team .team--member:hover .team--bio {
+	max-height: 999px;
+	top: 0;
+	opacity: 1;
+	transition: .35s all ease;
+}
+
+.team--member {
+	border: 1px solid #383F42;
+}
+
+.team--copy {
+	padding: 1.5rem 0 1.5rem;
+}
+
+.team--name, .team--title {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 109.091% */
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    color: #996D33;
+    text-align: center;
+}
+.team--name{
+    padding-bottom: 8px;
+}
+.team--title {
+	color: #252728;
+}
