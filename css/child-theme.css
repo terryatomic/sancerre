@@ -4025,6 +4025,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: baseline;
+  transform: rotate(180deg);
   content: "";
   background: url("../img/angle-down-light.svg") no-repeat;
   width: 21px;
@@ -4188,6 +4189,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: baseline;
+  transform: rotate(180deg);
   content: "";
   border-top: 0;
   border-right: 0.3em solid transparent;
@@ -4209,6 +4211,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: baseline;
+  transform: rotate(180deg);
   content: "";
   border-top: 0.3em solid transparent;
   border-right: 0;
@@ -4233,6 +4236,7 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: baseline;
+  transform: rotate(180deg);
   content: "";
 }
 .dropstart .dropdown-toggle::after {
@@ -15037,8 +15041,7 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 body {
-  color: var(--Charcoal, #252728);
-  border: 1px solid blue;
+  color: #334252;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -15342,6 +15345,9 @@ hr {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+.wp-block-columns.cover-band p, .wp-block-group.cover-band p {
+  max-width: 90%;
+}
 
 .hero-band {
   padding-top: 3rem;
@@ -15361,8 +15367,15 @@ hr {
 .post-card-content {
   padding: 1rem 1.5rem;
 }
+.post-card .button-container a {
+  text-transform: none;
+}
 .post-card h3, .post-card .h3, .post-card p {
   color: #334252;
+}
+.post-card p {
+  font-size: 18px;
+  line-height: 24px;
 }
 .post-card .button-custom, .post-card .phone-button, .post-card .arrow-button, .post-card .outline-button {
   background-color: unset;
@@ -15801,7 +15814,7 @@ textarea {
   max-width: 100%;
   left: 50%;
   margin-left: -325px;
-  background-color: rgba(236, 230, 218, 0.95);
+  background-color: #E0BA5C;
   margin-top: -2px;
 }
 
@@ -15992,12 +16005,17 @@ textarea {
   .dropdown-pane--column {
     margin-bottom: 1.5625rem;
   }
+  .dropdown-pane--column:not(.menu-featured-post) {
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+    margin-right: 25px;
+  }
   .dropdown-pane--heading, .menu-featured-post--heading {
-    font-family: "Lora", serif;
+    font-family: "Tenor Sans", sans-serif;
     font-size: 22px;
-    color: #E0BA5C;
+    color: #334252;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -16021,7 +16039,7 @@ textarea {
     padding-left: 1.5625rem;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    color: #E0BA5C;
+    color: #334252;
     letter-spacing: normal;
     line-height: 18px;
     font-weight: 500;

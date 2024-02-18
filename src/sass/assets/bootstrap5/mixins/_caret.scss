@@ -31,6 +31,7 @@
       display: inline-block;
       margin-left: $caret-spacing;
       vertical-align: baseline;
+      transform: rotate(180deg);
       content: "";
 
       @if $direction == down {

@@ -12,7 +12,7 @@
 	background-color: #86A5A9;
 	text-decoration: none;
 	color: #fff;
-	font-family: 'Lato', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 24px;
@@ -78,7 +78,9 @@
 }
 
 .arrow-button {
-	padding-right: 37px;
+	padding-right: 55px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
 }
 
 .arrow-button .svg-icon {
@@ -89,6 +91,8 @@
 	left: auto;
 	transform: translateY(-50%);
 	margin-top: 2px;
+	background-size: 26px;
+	width: 30px;
 }
 
 .phone-button {

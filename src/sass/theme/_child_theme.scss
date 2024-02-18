@@ -13,8 +13,7 @@ $primary-font: $sans-serif;
 $secondary-font: $tenor;
 
 body {
-  color: var(--Charcoal, #252728);
-  border: 1px solid blue;
+  color: #334252;
 
   .edit-post-visual-editor__content-area {
     overflow: hidden;
@@ -160,6 +159,7 @@ hr {
   border-color: #ECE6DA !important;
 }
 
+// Negative
 .mt-n5 {
   margin-top: -5rem;
   position: relative;
@@ -353,6 +353,10 @@ hr {
   &.cover-band {
     padding-top: 60px;
     padding-bottom: 40px;
+
+    p {
+      max-width: 90%;
+    }
   }
 }
 
@@ -381,8 +385,17 @@ hr {
     padding: 1rem 1.5rem;
   }
 
+  .button-container a {
+    text-transform: none;
+  }
+
   h3, p {
     color: $dark-navy;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .button-custom, .phone-button, .arrow-button, .outline-button {
@@ -900,7 +913,7 @@ textarea {
   max-width: 100%;
   left: 50%;
   margin-left: -325px;
-  background-color: rgba(236, 230, 218, 0.95);
+  background-color: $gold;
   margin-top: -2px;
 }
 
@@ -1126,14 +1139,20 @@ textarea {
 
   .dropdown-pane--column {
     margin-bottom: 1.5625rem;
+
+    &:not(.menu-featured-post) {
+      border-bottom: 1px solid white;
+      padding-bottom: 1rem;
+      margin-right: 25px;
+    }
   }
 
   .dropdown-pane--heading, .menu-featured-post--heading {
-    font-family: $serif;
+    font-family: $secondary-font;
     font-size: 22px;
-    color: $gold;
+    color: $dark-navy;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -1161,7 +1180,7 @@ textarea {
     padding-left: 1.5625rem;
     font-family: $sans-serif;
     font-size: 14px;
-    color: $gold;
+    color: $dark-navy;
     letter-spacing: normal;
     line-height: 18px;
     font-weight: 500;
