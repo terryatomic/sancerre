@@ -57,7 +57,7 @@ if(isset($block['anchor'])){
         background-color:<?php echo $color; ?>
     }
     <?php echo $uid;?>.has-bg.bg-align-both{
-        background-color:#ECE6DA;
+        /* background-color:#ECE6DA; */
     }
     <?php echo $uid;?>.bg-align-both .bg-pattern-container{
         background-color:unset;
@@ -68,6 +68,9 @@ if(isset($block['anchor'])){
 
     <?php echo $uid;?>.has-bg .bg-pattern{
         background-image: url('<?php echo esc_url($image_url); ?>');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .bg-pattern{
         width:100vw;

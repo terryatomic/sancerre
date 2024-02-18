@@ -6,9 +6,9 @@
 	text-align: center;
 }
 
-.button-custom, .phone-button, .arrow-button, .outline-button, .email-button, .contact-button {
+.button-custom, .phone-button, .arrow-button, .outline-button, .email-button, .contact-button, .gold-button {
 	display: inline-flex;
-	padding: .8rem 1rem;
+	padding: .8rem 1.2rem;
 	background-color: #86A5A9;
 	text-decoration: none;
 	color: #fff;
@@ -47,6 +47,15 @@
 
 .outline-button a {
 	text-decoration: none;
+}
+
+.gold-button {
+	background-color: #E0BA5C;
+}
+
+.gold-button:hover {
+	background-color: #CDA236;
+	color: white;
 }
 
 .icon-link {

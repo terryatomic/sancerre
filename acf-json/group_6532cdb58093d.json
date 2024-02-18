@@ -38,7 +38,8 @@
                 "Phone": "Phone",
                 "Email": "Email",
                 "Outline": "Outline",
-                "Share": "Share"
+                "Share": "Share",
+                "Gold": "Gold"
             },
             "default_value": "default",
             "return_format": "value",
@@ -147,5 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708276885
+    "modified": 1708280710
 }

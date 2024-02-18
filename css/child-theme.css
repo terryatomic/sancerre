@@ -24,6 +24,10 @@
   background: #E0BA5C;
 }
 
+.has-dark-navy-background-color {
+  background: #334252;
+}
+
 .has-rust-background-color {
   background: #BF6B33;
 }
@@ -15062,7 +15066,7 @@ body .alignfull {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   font-weight: 400;
   letter-spacing: normal;
 }
@@ -15082,11 +15086,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 36px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
-  padding-bottom: 26px;
+  line-height: 57px;
+  margin-bottom: 20px;
 }
 h2.h2-big, .h2-big.h2 {
   font-size: 52px;
@@ -15129,6 +15133,7 @@ h4, .h4 {
 p {
   margin-bottom: 30px;
   font-family: "Lora", serif;
+  font-size: 21px;
 }
 
 button {
@@ -15166,6 +15171,12 @@ button:hover {
 hr {
   opacity: 1;
   border-color: #ECE6DA !important;
+}
+
+.mt-n5 {
+  margin-top: -5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .highlights hr {
@@ -15278,6 +15289,10 @@ hr {
   margin-bottom: 0px;
 }
 
+.wp-block-media-text .wp-block-media-text__content {
+  padding-top: 4rem;
+}
+
 @media (max-width: 992px) {
   .wp-block-columns {
     flex-wrap: wrap !important;
@@ -15322,6 +15337,10 @@ hr {
 .wp-block-columns.no-padding, .wp-block-group.no-padding {
   padding-top: 0;
   padding-bottom: 0;
+}
+.wp-block-columns.cover-band, .wp-block-group.cover-band {
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .hero-band {
@@ -15483,7 +15502,7 @@ hr {
   gap: 1rem;
 }
 .card-block .wp-block-column {
-  padding: 24px;
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
   background: white;

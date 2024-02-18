@@ -35,8 +35,7 @@ if ($button_style == 'Outline') {
     $class_name .= ' outline-button';
 }
 if ($button_style == 'Share') {
-    $link_class_name .= ' share-this arrow-button';
-    $icon = get_stylesheet_directory_uri().'/img/arrow.svg';
+    $link_class_name .= ' share-this';
 }
 if ($button_style == 'Arrow') {
     $link_class_name .= ' arrow-button';
@@ -50,6 +49,9 @@ if ($button_style == 'Email') {
     $link_class_name .= ' email-button';
     $icon = get_stylesheet_directory_uri().'/img/email.svg';
 }
+if ($button_style == 'Gold') {
+    $link_class_name .= ' gold-button';
+}
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];
 }
@@ -61,7 +63,7 @@ $link = get_field('link');
 ?>
 <div class="<?php echo $class_name;?>">
     <a href="<?php echo $link['url']?>" class="<?php echo $link_class_name;?>" target="<?php echo $link['target']?>">
-        <?php if($icon || $button_style == 'Arrow' || $button_style == 'Email' || $button_style == 'Phone'): ?>
+        <?php if($icon || $button_style == 'Arrow' || $button_style == 'Email' ||  $button_style == 'Phone'): ?>
             <span class="<?php echo $svg_class_name; ?>" style="background-image: url('<?php echo esc_url($icon); ?>');"></span>
         <?php endif; ?>
         <?php echo $link['title']?>
