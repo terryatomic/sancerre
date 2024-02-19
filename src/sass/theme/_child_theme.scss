@@ -166,6 +166,19 @@ hr {
   z-index: 2;
 }
 
+// Break
+.break-right {
+  .wp-block-media-text__content {
+    padding-left: 0 !important;
+    padding-right: 0!important;
+  }
+
+  figure {
+    position: relative;
+    right: calc(-1 * (50vw - 100%)/1);
+  }
+}
+
 .highlights hr {
   border-top-width: 2px;
 }

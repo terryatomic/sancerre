@@ -44,11 +44,11 @@
 
 .bg-align-both .bg-pattern-container {
 	/* width: calc(100% - 20%); */
-	width: calc(100% - 10%);
+	/* width: calc(100% - 10%); */
 
 	margin: auto;
 	/* padding: 0 100px; */
-	padding: 0 50px;
+	/* padding: 0 50px; */
 
 }
 
