@@ -958,48 +958,44 @@ textarea {
 // }
 
 .mega-menu,
-.mega-menu .nav-link {
-  position: relative;
+.mega-menu .nav-link{
+    position: relative;
 }
-
-.mega-menu:hover::after {
-  position: absolute;
-  bottom: 0px;
-  left: -100px;
-  width: 300px;
-  height: 60px;
-  content: '';
+.mega-menu:hover::after{
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    width: 300px;
+    height: 60px;
+    content: '';
 }
-
 .mega-menu .mega-menu-carrot {
-  position: absolute;
-  top: calc(50% - 10px);
-  transform: rotate(180deg);
-  right: 7px;
-  width: 15px;
-  height: 15px;
-  background: url("images/angle-down-light.svg") no-repeat center center;
-  background-size: 100% 100%;
+    position: absolute;
+    top: calc(50% - 10px);
+    transform: rotate(180deg);
+    right: 7px;
+    width: 15px;
+    height: 15px;
+    background: url('images/angle-down-light.svg') no-repeat center center;
+    background-size: 100% 100%;
 }
-
-.active-item {
-  display: block !important;
+.active-item{
+    display: block !important;
 }
-
 @media only screen and (min-width: 993px) {
-  .dropdown-pane.bottom {
-    max-width: 650px;
-    width: 650px;
-  }
+	.dropdown-pane.bottom {
+		max-width: 650px;
+        width: 650px;
+	}
 }
-
 .dropdown-pane .container {
-  display: block !important;
+	display: block !important;
 }
 
-.nav-link {
-  padding-top: 52px;
-  padding-bottom: 52px;
+
+.nav-link{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 991px) {
