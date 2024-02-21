@@ -594,7 +594,7 @@ figure.wp-block-image img {
 
 // BLOCKS
 .add-border {
-  padding: 10px;
+  padding: 20px;
   background: $beige;
 }
 
@@ -626,7 +626,7 @@ figure.wp-block-image img {
         margin-bottom: 0;
         font-weight: 400;
       }
-      
+
       hr {
         margin: .25rem 0 1rem 0;
       }
@@ -1574,8 +1574,9 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 .post .article-container .entry-content {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
+  color: $dark-navy;
   font-family: $serif;
 }
 
@@ -1667,8 +1668,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   }
 
   h4 {
-    font-size: 21px;
-    font-family: $serif;
+    font-size: 22px;
+    font-family: $secondary-font;
+    font-weight: 400;
+    text-transform: none;
   }
 
   ul {
@@ -1705,13 +1708,13 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
     -moz-appearance: none;
     background-color: #fff;
     width: 100%;
-    padding: 8px;
+    padding: 8px 12px;
     font-size: 15px;
     cursor: pointer;
     position: relative;
     z-index: 1;
-    color: #666;
-    border: 1px solid #ccc;
+    color: $dark-navy;
+    border: 1px solid #444;
     border-radius: 0;
   }
 
@@ -1740,14 +1743,25 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 .widget-container {
-  background-color: $beige;
-  padding: 20px 20px 20px 105px;
+  background-color: $gold;
+  padding: 20px 20px 20px 50px;
   position: relative;
+
+  &:before {
+    background: $dark-navy;
+    width: 1rem;
+    left: 0;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
 }
 
 .widget-container::after {
-  background-image: url("../img/pattern.png");
-  background-repeat: repeat-y;
+  // background-image: url("../img/pattern.png");
+  // background-repeat: repeat-y;
   content: '';
   position: absolute;
   width: 75px;
@@ -1758,7 +1772,7 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 
 @media (max-width: 1199px) {
   .widget-container {
-    background-color: $beige;
+    background-color: $gold;
     padding: 24px;
     position: relative;
     margin-bottom: 30px;

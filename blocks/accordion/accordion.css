@@ -40,8 +40,8 @@
 	transition: .25s all ease;
 }
 
-.accordion--row:last-of-type {
-	border-bottom: 1px solid #D3D5D6;
+.accordion--row:last-of-type .accordion--row {
+	border: none;
 }
 
 .accordion--row.is-active {
@@ -55,8 +55,10 @@
 }
 
 .accordion--title.ac-q:hover {
-	background-color: #617E82;
+	background-color: #86A5A9;
 }
+
+
 
 .accordion button {
 	background-color: transparent;
@@ -92,7 +94,7 @@
 
 .accordion--title:before {
 	content: "";
-	background-image: url(images/arrow.svg);
+	background-image: url(images/arrow-white.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -102,6 +104,8 @@
 	top: 20px;
 	right: 25px;
 	transition: .25s all ease;
+	transform: rotate(180deg);
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -111,12 +115,15 @@
 }
 
 .accordion .is-active .accordion--title:before {
-	transform: rotate(180deg);
-	background-image: url(images/arrow-white.svg);
+	background-image: url(images/arrow.svg);
 }
 
 .accordion .is-active .accordion--title:before svg {
-	fill: #fff;
+	fill: #4D4D4D;
+}
+
+.accordion .is-active .accordion--title.ac-q:hover {
+	background-color: #ECE6DA;
 }
 
 .accordion ul {
