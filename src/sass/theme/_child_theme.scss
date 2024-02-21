@@ -156,7 +156,6 @@ button:hover {
 
 hr {
   opacity: 1;
-  border-color: #ECE6DA !important;
 }
 
 // Negative
@@ -165,6 +164,7 @@ hr {
   position: relative;
   z-index: 2;
 }
+
 .mt-n10 {
   margin-top: -10rem;
   position: relative;
@@ -175,7 +175,7 @@ hr {
 .break-right {
   .wp-block-media-text__content {
     padding-left: 0 !important;
-    padding-right: 0!important;
+    padding-right: 0 !important;
   }
 
   figure {
@@ -401,6 +401,7 @@ hr {
 
   &-content {
     padding: 1rem 1.5rem;
+    min-height: 300px;
   }
 
   .button-container a {
@@ -453,6 +454,10 @@ hr {
       margin-top: 1rem;
     }
   }
+}
+
+figure.wp-block-image img {
+  margin-bottom: 0;
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -608,6 +613,31 @@ hr {
 
     p {
       font-family: $primary-font;
+    }
+  }
+
+  &.card-block--dark {
+    .wp-block-column {
+      padding: 26px 30px;
+      min-height: 303px;
+
+      h3 {
+        font-size: 36px;
+        margin-bottom: 0;
+        font-weight: 400;
+      }
+      
+      hr {
+        margin: .25rem 0 1rem 0;
+      }
+
+      p {
+        font-family: $serif;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: normal;
+      }
     }
   }
 
@@ -958,44 +988,48 @@ textarea {
 // }
 
 .mega-menu,
-.mega-menu .nav-link{
-    position: relative;
+.mega-menu .nav-link {
+  position: relative;
 }
-.mega-menu:hover::after{
-    position: absolute;
-    bottom: 0px;
-    left: -100px;
-    width: 300px;
-    height: 60px;
-    content: '';
+
+.mega-menu:hover::after {
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  width: 300px;
+  height: 60px;
+  content: '';
 }
+
 .mega-menu .mega-menu-carrot {
-    position: absolute;
-    top: calc(50% - 10px);
-    transform: rotate(180deg);
-    right: 7px;
-    width: 15px;
-    height: 15px;
-    background: url('images/angle-down-light.svg') no-repeat center center;
-    background-size: 100% 100%;
+  position: absolute;
+  top: calc(50% - 10px);
+  transform: rotate(180deg);
+  right: 7px;
+  width: 15px;
+  height: 15px;
+  background: url("images/angle-down-light.svg") no-repeat center center;
+  background-size: 100% 100%;
 }
-.active-item{
-    display: block !important;
+
+.active-item {
+  display: block !important;
 }
+
 @media only screen and (min-width: 993px) {
-	.dropdown-pane.bottom {
-		max-width: 650px;
-        width: 650px;
-	}
+  .dropdown-pane.bottom {
+    max-width: 650px;
+    width: 650px;
+  }
 }
+
 .dropdown-pane .container {
-	display: block !important;
+  display: block !important;
 }
 
-
-.nav-link{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.nav-link {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1311,14 +1345,16 @@ textarea {
 
 .quote, .wp-block-quote p {
   font-family: $serif;
-  color: $gold;
+
+  // color: $gold;
   font-style: normal;
-  font-size: 1.875rem;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 400;
   margin: 2.5rem 0;
   line-height: 1.3em;
-  border-top: 1px solid #D3D5D6;
-  border-bottom: 1px solid #D3D5D6;
+
+  // border-top: 1px solid #D3D5D6;
+  // border-bottom: 1px solid #D3D5D6;
 }
 
 .wp-block-quote p {
@@ -1354,54 +1390,54 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 1300px) {
-  .wp-block-quote:after {
-    content: '';
-    border-left: 1px solid #D3D5D6;
-    border-right: 1px solid #D3D5D6;
-    position: absolute;
-    left: 50%;
+// @media only screen and (min-width: 1300px) {
+//   .wp-block-quote:after {
+//     content: '';
+//     border-left: 1px solid #D3D5D6;
+//     border-right: 1px solid #D3D5D6;
+//     position: absolute;
+//     left: 50%;
+// 
+//     /* Half of the parent's width
+//     top: 0px;
+//     transform: translateX(-50%);
+// 
+//     /* This will center the child in the parent
+//     width: 90vw;
+// 
+//     /* Span the entire viewport width
+//     height: 100%;
+//     max-width: 86.25rem;
+// 
+//     /* Ensure it does not exceed the viewport width
+//     box-sizing: border-box;
+//   }
+// }
 
-    /* Half of the parent's width */
-    top: 0px;
-    transform: translateX(-50%);
-
-    /* This will center the child in the parent */
-    width: 90vw;
-
-    /* Span the entire viewport width */
-    height: 100%;
-    max-width: 86.25rem;
-
-    /* Ensure it does not exceed the viewport width */
-    box-sizing: border-box;
-  }
-}
-
-.wp-block-quote:before {
-  content: '';
-  border-top: 1px solid #D3D5D6;
-  border-bottom: 1px solid #D3D5D6;
-  position: absolute;
-  left: 50%;
-
-  /* Half of the parent's width */
-  top: 0px;
-  transform: translateX(-50%);
-
-  /* This will center the child in the parent */
-  width: 100vw;
-
-  /* Span the entire viewport width */
-  height: 100%;
-  box-sizing: border-box;
-}
+// .wp-block-quote:before {
+//   content: '';
+//   border-top: 1px solid #D3D5D6;
+//   border-bottom: 1px solid #D3D5D6;
+//   position: absolute;
+//   left: 50%;
+// 
+//   /* Half of the parent's width
+//   top: 0px;
+//   transform: translateX(-50%);
+// 
+//   /* This will center the child in the parent
+//   width: 100vw;
+// 
+//   /* Span the entire viewport width
+//   height: 100%;
+//   box-sizing: border-box;
+// }
 
 .quote--credit, .wp-block-quote cite {
   text-transform: uppercase;
   color: $charcoal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 18px;
   font-style: normal;
   max-width: 21.875rem;
   text-align: left;
@@ -1422,6 +1458,7 @@ textarea {
 .wp-block-quote cite::before {
   position: absolute;
   left: -20px;
+  content: none;
 }
 
 .wpgmza-infowindow .wpgmza_infowindow_title,

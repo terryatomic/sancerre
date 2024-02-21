@@ -1,35 +1,35 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap");
 .has-white-background-color {
-  background: #FFFFFF;
+  background: #FFFFFF !important;
 }
 
 .has-black-background-color {
-  background: #000000;
+  background: #000000 !important;
 }
 
 .has-blue-background-color {
-  background: #86A5A9;
+  background: #86A5A9 !important;
 }
 
 .has-charcoal-background-color {
-  background: #4D545E;
+  background: #4D545E !important;
 }
 
 .has-beige-background-color {
-  background: #ECE6DA;
+  background: #ECE6DA !important;
 }
 
 .has-gold-background-color {
-  background: #E0BA5C;
+  background: #E0BA5C !important;
 }
 
 .has-dark-navy-background-color {
-  background: #334252;
+  background: #334252 !important;
 }
 
 .has-rust-background-color {
-  background: #BF6B33;
+  background: #BF6B33 !important;
 }
 
 .has-white-color {
@@ -15173,7 +15173,6 @@ button:hover {
 
 hr {
   opacity: 1;
-  border-color: #ECE6DA !important;
 }
 
 .mt-n5 {
@@ -15381,6 +15380,7 @@ hr {
 }
 .post-card-content {
   padding: 1rem 1.5rem;
+  min-height: 300px;
 }
 .post-card .button-container a {
   text-transform: none;
@@ -15418,6 +15418,10 @@ hr {
 }
 .secondary-hero .button-container:nth-child(2) {
   margin-top: 1rem;
+}
+
+figure.wp-block-image img {
+  margin-bottom: 0;
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -15540,6 +15544,25 @@ hr {
 }
 .card-block .wp-block-column p {
   font-family: "Montserrat", sans-serif;
+}
+.card-block.card-block--dark .wp-block-column {
+  padding: 26px 30px;
+  min-height: 303px;
+}
+.card-block.card-block--dark .wp-block-column h3, .card-block.card-block--dark .wp-block-column .h3 {
+  font-size: 36px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.card-block.card-block--dark .wp-block-column hr {
+  margin: 0.25rem 0 1rem 0;
+}
+.card-block.card-block--dark .wp-block-column p {
+  font-family: "Lora", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
 }
 .card-block .wp-block-columns {
   margin-bottom: 0px;
@@ -16152,14 +16175,11 @@ textarea {
 }
 .quote, .wp-block-quote p {
   font-family: "Lora", serif;
-  color: #E0BA5C;
   font-style: normal;
-  font-size: 1.875rem;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 400;
   margin: 2.5rem 0;
   line-height: 1.3em;
-  border-top: 1px solid #D3D5D6;
-  border-bottom: 1px solid #D3D5D6;
 }
 
 .wp-block-quote p {
@@ -16193,46 +16213,11 @@ textarea {
     padding: 3.75rem 0rem 5.625rem;
   }
 }
-@media only screen and (min-width: 1300px) {
-  .wp-block-quote:after {
-    content: "";
-    border-left: 1px solid #D3D5D6;
-    border-right: 1px solid #D3D5D6;
-    position: absolute;
-    left: 50%;
-    /* Half of the parent's width */
-    top: 0px;
-    transform: translateX(-50%);
-    /* This will center the child in the parent */
-    width: 90vw;
-    /* Span the entire viewport width */
-    height: 100%;
-    max-width: 86.25rem;
-    /* Ensure it does not exceed the viewport width */
-    box-sizing: border-box;
-  }
-}
-.wp-block-quote:before {
-  content: "";
-  border-top: 1px solid #D3D5D6;
-  border-bottom: 1px solid #D3D5D6;
-  position: absolute;
-  left: 50%;
-  /* Half of the parent's width */
-  top: 0px;
-  transform: translateX(-50%);
-  /* This will center the child in the parent */
-  width: 100vw;
-  /* Span the entire viewport width */
-  height: 100%;
-  box-sizing: border-box;
-}
-
 .quote--credit, .wp-block-quote cite {
   text-transform: uppercase;
   color: #4D545E;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 18px;
   font-style: normal;
   max-width: 21.875rem;
   text-align: left;
@@ -16253,6 +16238,7 @@ textarea {
 .wp-block-quote cite::before {
   position: absolute;
   left: -20px;
+  content: none;
 }
 
 .wpgmza-infowindow .wpgmza_infowindow_title,
