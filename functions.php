@@ -74,7 +74,7 @@ function admin_style($hook_suffix) {  // Notice the $hook_suffix parameter here
 		wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array() );
 		wp_enqueue_script( 'slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), true );
 
-		// wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(),$css_version );
+		wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(),$css_version );
 		wp_enqueue_script( 'admin-nexcore', get_stylesheet_directory_uri() . '/js/admin.js', 	array(),$css_version );
 		}
 }

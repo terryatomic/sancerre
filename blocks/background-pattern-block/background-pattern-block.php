@@ -68,7 +68,7 @@ if(isset($block['anchor'])){
 
     <?php echo $uid;?>.has-bg .bg-pattern{
         background-image: url('<?php echo esc_url($image_url); ?>');
-        background-repeat: repeat-y;
+        background-size:cover;
         /* background-size: cover; */
         background-position: center;
         opacity: .3;

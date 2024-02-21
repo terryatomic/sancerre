@@ -1,11 +1,11 @@
-
-
 .highlights--heading {
 	text-align: center;
 }
-.highlights h3{
-    font-size: 26px;
+
+.highlights h3 {
+	font-size: 26px;
 }
+
 .highlights--grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -14,21 +14,26 @@
 }
 
 .highlights--highlight {
-	border: 1px solid #383F42;
+	background: #86A5A9;
 	padding: 2.5rem 2.5rem 2.5rem;
 	text-align: center;
 	width: 100%;
 }
-.highlights--highlight p{
+
+.highlights--highlight p {
 	margin-bottom: 0px;
+	color: white;
+	font-size: 21px;
 }
+
 @media only screen and (min-width: 1024px) {
 	.highlights--highlight {
 		width: auto;
 		flex: 0 0 calc(33% - 25px);
 	}
-	.highlights h3{
-		font-size: 32px;
+
+	.highlights h3 {
+		font-size: 36px;
+		color: #334252;
 	}
 }
-

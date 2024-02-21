@@ -25,7 +25,7 @@ body {
     width: 100vw;
   }
 
-  font-family: $sans-serif;
+  font-family: $tenor;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -594,8 +594,8 @@ figure.wp-block-image img {
 
 // BLOCKS
 .add-border {
-  border: 2px solid $gold;
   padding: 10px;
+  background: $beige;
 }
 
 .card-block {
@@ -622,7 +622,7 @@ figure.wp-block-image img {
       min-height: 303px;
 
       h3 {
-        font-size: 36px;
+        font-size: 23px;
         margin-bottom: 0;
         font-weight: 400;
       }
@@ -1251,7 +1251,7 @@ textarea {
 
   .dropdown-pane a {
     padding: 0;
-    color: $gold;
+    color: $dark-navy;
     text-decoration: none;
   }
 
@@ -1573,6 +1573,12 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   padding: 80px 0px;
 }
 
+.post .article-container .entry-content {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $serif;
+}
+
 .post-image {
   overflow: hidden;
   width: 100%;
@@ -1588,10 +1594,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 .post-date {
-  font-size: 22px;
-  color: $gold;
-  font-family: $serif;
-  font-weight: 500;
+  font-size: 15px;
+  color: $dark-navy;
+  font-family: $primary-font;
+  font-weight: 600;
 }
 
 .row-flex {
@@ -1619,8 +1625,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   h2 {
     margin-bottom: 15px;
     text-transform: unset;
-    font-size: 30px;
+    font-size: 23px;
+    line-height: 29px;
     letter-spacing: 1px;
+    color: $rust;
   }
 
   .entry-content {

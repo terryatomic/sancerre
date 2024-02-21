@@ -15042,7 +15042,7 @@ figure.woocommerce-product-gallery__wrapper {
 
 body {
   color: #334252;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -15526,8 +15526,8 @@ figure.wp-block-image img {
 }
 
 .add-border {
-  border: 2px solid #E0BA5C;
   padding: 10px;
+  background: #ECE6DA;
 }
 
 .card-block {
@@ -15550,7 +15550,7 @@ figure.wp-block-image img {
   min-height: 303px;
 }
 .card-block.card-block--dark .wp-block-column h3, .card-block.card-block--dark .wp-block-column .h3 {
-  font-size: 36px;
+  font-size: 23px;
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -16096,7 +16096,7 @@ textarea {
   }
   .dropdown-pane a {
     padding: 0;
-    color: #E0BA5C;
+    color: #334252;
     text-decoration: none;
   }
   li.mega-menu:hover .dropdown-pane, li.mega-menu:hover .dropdown-pane {
@@ -16348,6 +16348,12 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   padding: 80px 0px;
 }
 
+.post .article-container .entry-content {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Lora", serif;
+}
+
 .post-image {
   overflow: hidden;
   width: 100%;
@@ -16364,10 +16370,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 .post-date {
-  font-size: 22px;
-  color: #E0BA5C;
-  font-family: "Lora", serif;
-  font-weight: 500;
+  font-size: 15px;
+  color: #334252;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .row-flex {
@@ -16392,8 +16398,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 #posts-container h2, #posts-container .h2 {
   margin-bottom: 15px;
   text-transform: unset;
-  font-size: 30px;
+  font-size: 23px;
+  line-height: 29px;
   letter-spacing: 1px;
+  color: #BF6B33;
 }
 #posts-container .entry-content p {
   margin-bottom: 10px;
