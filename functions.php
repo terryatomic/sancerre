@@ -422,3 +422,4 @@ function sancerre_after_setup() {
 }
 add_action( 'after_setup_theme', 'sancerre_after_setup', 100 );
 
+

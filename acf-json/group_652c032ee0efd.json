@@ -1,6 +1,6 @@
 {
     "key": "group_652c032ee0efd",
-    "title": "Block: Mobile Only Block",
+    "title": "Responsive Image Block",
     "fields": [
         {
             "key": "field_652c09ab4b6ae",
@@ -58,7 +58,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/mobile-only-block"
+                "value": "acf\/responsive-image-block"
             }
         ]
     ],
@@ -71,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707877013
+    "modified": 1708624513
 }

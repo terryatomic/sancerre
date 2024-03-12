@@ -6,10 +6,10 @@
 	text-align: center;
 }
 
-.button-custom, .phone-button, .arrow-button, .outline-button, .email-button, .contact-button, .gold-button {
+.button-custom, .phone-button, .arrow-button, .outline-button, .email-button, .contact-button, .gold-button, .white-button, .share-this {
 	display: inline-flex;
 	padding: .8rem 1.2rem;
-	background-color: #86A5A9;
+	background-color: #4D545E;
 	text-decoration: none;
 	color: #fff;
 	font-family: "Montserrat", sans-serif;
@@ -23,7 +23,10 @@
 	text-align: center;
 }
 
+
 .email-button, .phone-button {
+	background-color: #FFFFFF;
+	color: #4D545E;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -36,12 +39,12 @@
 .outline-button:hover {
 	cursor: pointer;
 	color: #fff;
-	background-color: #617E82;
+	background-color: #4D545E;
 }
 
 .outline-button {
 	background-color: unset;
-	border: 1px solid #86A5A9;
+	border: 1px solid #4D545E;
 	margin-bottom: 10px;
 }
 
@@ -53,7 +56,17 @@
 	background-color: #E0BA5C;
 }
 
-.gold-button:hover {
+.white-button, .share-this {
+	background-color: #FFFFFF;
+	color: #4D545E;
+}
+.white-button:hover, .share-this:hover {
+	background-color: #4D545E;
+	color: white;
+}
+
+
+.gold-button:hover{
 	background-color: #CDA236;
 	color: white;
 }
@@ -107,6 +120,7 @@
 .phone-button .svg-icon, .email-button .svg-icon {
 	width: 22px;
 	height: 22px;
+	filter: none;
 }
 
 .icon-link.right .svg-icon {

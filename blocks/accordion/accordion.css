@@ -24,7 +24,8 @@
 }
 
 .accordion {
-	padding-bottom: 80px;
+	padding-bottom: 50px;
+	margin-top: 2rem;
 }
 
 .accordion--heading {
@@ -38,6 +39,10 @@
 	border-bottom: none;
 	/* padding-bottom: 0.625rem; */
 	transition: .25s all ease;
+}
+
+.accordion--row .accordion--row {
+	border:none;
 }
 
 .accordion--row:last-of-type .accordion--row {
@@ -62,7 +67,7 @@
 
 .accordion button {
 	background-color: transparent;
-	color: white;
+	color: #334252;
 	background: #86A5A9;
 	/* desktop H4 */
 	font-family: 'Lato', sans-serif;
@@ -94,7 +99,7 @@
 
 .accordion--title:before {
 	content: "";
-	background-image: url(images/arrow-white.svg);
+	background-image: url(images/arrow-navy.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;

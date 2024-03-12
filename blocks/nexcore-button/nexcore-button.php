@@ -52,6 +52,9 @@ if ($button_style == 'Email') {
 if ($button_style == 'Gold') {
     $link_class_name .= ' gold-button';
 }
+if ($button_style == 'White') {
+    $link_class_name .= ' white-button';
+}
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];
 }

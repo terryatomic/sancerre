@@ -39,7 +39,8 @@
                 "Email": "Email",
                 "Outline": "Outline",
                 "Share": "Share",
-                "Gold": "Gold"
+                "Gold": "Gold",
+                "White": "White"
             },
             "default_value": "default",
             "return_format": "value",
@@ -148,5 +149,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708280710
+    "modified": 1710010915
 }

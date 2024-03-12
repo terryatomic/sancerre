@@ -1,0 +1,18 @@
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Default behavior without .break-medium */
+@media screen and (max-width: 1025px) {
+    .desktop-image {
+        display: none; /* Hide desktop image for mobile screens */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mobile-image {
+        display: none; /* Hide mobile image for desktop screens */
+    }
+}
+
