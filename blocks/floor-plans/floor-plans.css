@@ -1,6 +1,4 @@
-
 /*Floor Plans*/
-
 .floor-plans {
 	padding: 2.5rem 0;
 }
@@ -10,20 +8,24 @@
 }
 
 .floor-plans--subheading {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 109.091% */
-    letter-spacing: 1.76px;
-    text-transform: uppercase;
-    padding-top: 24px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 109.091% */
+	letter-spacing: 1.76px;
+	text-transform: uppercase;
+	padding-top: 24px;
 }
-.floor-plans--subheading span{
-    font-size: 16px;
+
+.floor-plans--subheading span {
+	font-size: 22px;
+	color: #86A5A9;
+	font-weight: 700;
 }
+
 .floor-plans--grid {
-	max-width: 60rem;
 	margin: auto;
 }
 
@@ -31,7 +33,7 @@
 	.floor-plans--grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		gap: 1.875rem;
+		gap: 1.5rem;
 	}
 }
 
@@ -43,34 +45,37 @@
 	padding-bottom: 70px;
 	margin-bottom: 1.5rem;
 }
+
 @media only screen and (min-width: 1024px) {
 	.floor-plans--plan {
 		margin-bottom: 0rem;
 	}
 }
+
 .floor-plans--thumbnail {
 	max-width: 16.25rem;
 	margin: 0 auto 0.9375rem;
 }
 
 .floor-plans--price-number {
-	font-family: 'swear-text', sans-serif;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
 	font-size: 1.625rem;
-    margin-bottom: -0.25rem;
-    color: #996D33;
+	margin-bottom: -0.25rem;
+	color: #BF6B33;
 }
 
 .floor-plans--price-label {
-	font-family: 'termina', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 0.8125rem;
 	margin-bottom: -0.625rem;
-    letter-spacing: .22rem;
+	letter-spacing: .22rem;
 }
 
 .floor-plans--beds, .floor-plans--feet {
-	font-family: 'termina', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 1rem;
@@ -84,26 +89,27 @@
 	bottom: 0;
 	width: 100%;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .floor-plans--cta .button {
-	display: block;
-	width: 100%;
-	padding-top: 0.5375rem;
-	padding-bottom: 0.5375rem;
-    color: #fff;
-    background-color: #996D33;
-    text-decoration: none;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 109.091% */
-    letter-spacing: 1.76px;
-    text-transform: uppercase;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	padding: 0.5375rem;
+	color: #fff;
+	background-color: #334252;
+	text-decoration: none;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	/* 109.091% */
+	letter-spacing: 1.76px;
+	text-transform: uppercase;
 }
+
 .floor-plans--cta .button:hover {
-    background-color: #804E0E;
+	background-color: #804E0E;
 }
 
 .floor-plans .js-tablist {

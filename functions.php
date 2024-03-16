@@ -362,6 +362,42 @@ function custom_excerpt() {
     }
 }
 
+// Add logo to Login Screen
+function my_login_logo() {
+    $logo = get_theme_mod('custom_logo');
+    $image = wp_get_attachment_image_src($logo, 'full');
+
+    if ($image) {
+        $image_url = $image[0]; ?>
+        <style type="text/css">
+            #login h1 a, .login h1 a {
+                background-image: url(<?php echo esc_url($image_url); ?>);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 60px;
+                max-width: 100%;
+                width: 300px;
+            }
+
+            .wp-core-ui .button-primary {
+                background:  #E0BA5C!important;
+                border-color: #E0BA5C!important;
+            }
+
+            body.login {
+                background:  #4D545E!important;
+            }
+
+            #login #loginform {
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+            }
+        </style>
+    <?php }
+}
+add_action('login_enqueue_scripts', 'my_login_logo');
+
+
 
 // Editor Color Palette
 function sancerre_after_setup() {

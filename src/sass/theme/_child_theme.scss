@@ -14,7 +14,6 @@ $secondary-font: $tenor;
 
 body {
   color: #334252;
-  border: none;
 
   .edit-post-visual-editor__content-area {
     overflow: hidden;
@@ -1864,5 +1863,21 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+
+.community-header-container {
+  p {
+    font-family: $primary-font;
+  }
+}
+
+.community-logo {
+  margin-bottom: 1rem;
+
+  img {
+    width: 100%;
+    max-width: 268px;
+    margin: 0 auto;
   }
 }
