@@ -83,6 +83,8 @@ add_action('admin_enqueue_scripts', 'admin_style', 2000);
 
 
 
+
+
 /**
  * Load the child theme's text domain
  */
@@ -457,5 +459,7 @@ function sancerre_after_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'sancerre_after_setup', 100 );
+
+
 
 

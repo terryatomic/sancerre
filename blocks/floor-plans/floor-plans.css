@@ -68,16 +68,15 @@
 .floor-plans--price-label {
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 0.8125rem;
-	margin-bottom: -0.625rem;
+	font-weight: 700;
+	font-size: 1rem;
 	letter-spacing: .22rem;
 }
 
 .floor-plans--beds, .floor-plans--feet {
 	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 1rem;
 	padding-top: 10px;
 }
