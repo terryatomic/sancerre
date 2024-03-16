@@ -15075,6 +15075,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 h1 em, .h1 em, h2 em, .h2 em, h3 em, .h3 em, h4 em, .h4 em, h5 em, .h5 em, h6 em, .h6 em {
   font-family: "Lora", serif;
+  font-weight: 400;
 }
 
 h1, .h1 {
@@ -15089,10 +15090,10 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 45px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 400;
-  line-height: 57px;
+  line-height: 42px;
   margin-bottom: 20px;
 }
 h2.h2-big, .h2-big.h2 {
@@ -15101,7 +15102,7 @@ h2.h2-big, .h2-big.h2 {
 }
 
 .h2-small {
-  font-size: 36px;
+  font-size: 38px;
   font-style: normal;
   font-weight: 500;
   line-height: 40px;
@@ -16256,12 +16257,14 @@ textarea {
   width: 100%;
 }
 
-.gm-style-iw-d {
-  padding: 10px 15px;
-}
-
 .wpgmza-infowindow p {
   margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wpgmza-infowindow p b {
+  font-weight: 600;
 }
 
 .wpgmza-infowindow img {

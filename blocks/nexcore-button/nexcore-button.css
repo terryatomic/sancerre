@@ -90,6 +90,11 @@
 	filter: brightness(0) invert(1);
 }
 
+.contact-button {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 .arrow-button {
 	padding-right: 55px;
 	font-weight: 700;

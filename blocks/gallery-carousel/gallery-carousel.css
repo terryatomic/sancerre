@@ -1,65 +1,94 @@
-.slick-slider-selector{
-    position: relative;
+.slick-slider-selector {
+	position: relative;
 }
-.counter-info{
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    padding: 24px;
+
+.counter-info {
+	color: #334252;
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 0 10px 30px 10px;
 }
+
 .slick-dots {
-    text-align: center; /* Center the child elements horizontally */
+	text-align: center;
+	margin-top: 1rem;
+	position: relative;
+	z-index: 1; */
+	/* Center the child elements horizontally */
 }
+
 .slick-dots li {
-    display: inline-block; /* Display the dots inline */
-    width: 10px; /* Set the width and height to create a 10px x 10px circle */
-    height: 10px;
-    content: '';
-    border-radius: 50%; /* Create a circular shape */
-    margin: 0 5px; /* Add some space between the circles */
-    cursor: pointer; /* Add cursor pointer for interactivity */
-    background-color: #7C7C7C;
+	display: inline-block;
+	/* Display the dots inline */
+	width: 10px;
+	/* Set the width and height to create a 10px x 10px circle */
+	height: 10px;
+	content: '';
+	border-radius: 50%;
+	/* Create a circular shape */
+	margin: 0 5px;
+	/* Add some space between the circles */
+	cursor: pointer;
+	/* Add cursor pointer for interactivity */
+	background-color: #FFFFFF;
 }
-li.slick-active{
-    background-color: #FFFFFF;
+
+li.slick-active {
+	background-color: #334252;
 }
-.slick-dots li button{
-   display: none;
+
+.slick-dots li button {
+	display: none;
 }
-.slick-slide img{
-    margin: auto;
+
+.slick-slide img {
+	margin: auto;
+	max-width: 990px;
+  height: 680px;
+  object-fit: cover;
 }
-.slick-arrows-container{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    z-index: 9;
+
+.slick-arrows-container {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	z-index: 9;
 }
+
 .slick-arrows-container span {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border-radius:100%;
-    display: inline-block;
-    background-image: url('/img/arrows.svg'); /* Set the background image path */
-    background-size: 25px 25px; /* Scale the background image to cover the span */
-    background-repeat: no-repeat; 
-    background-position: center center; /* Center the background image horizontally and vertically */
-    background-color:#996D33;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	border-radius: 100%;
+	display: inline-block;
+	background-image: url('/img/arrows.svg');
+	/* Set the background image path */
+	background-size: 25px 25px;
+	/* Scale the background image to cover the span */
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* Center the background image horizontally and vertically */
+	background-color: #334252;
 }
+
 .slick-arrows-container span:hover {
-    background-color:#7C7C7C;
-    cursor:pointer;
+	background-color: #7C7C7C;
+	cursor: pointer;
 }
-.slick-arrows-container .next-arrow{
-    right: 0px;
+
+.slick-arrows-container .next-arrow {
+	right: 0px;
 }
-.slick-arrows-container .prev-arrow{
-    left: 0px;
-    transform: rotate(180deg);
+
+.slick-arrows-container .prev-arrow {
+	left: 0px;
+	transform: rotate(180deg);
 }
+
 @media only screen and (max-width: 992px) {
-    .slick-arrows-container {
-        display: none;
-    }
+	.slick-arrows-container {
+		display: none;
+	}
 }
