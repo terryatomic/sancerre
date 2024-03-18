@@ -71,6 +71,10 @@ if(isset($block['anchor'])){
         background-size:cover;
         /* background-size: cover; */
         background-position: center;
+        opacity: .8;
+    }
+    
+    .bg-pattern-container.light .bg-pattern {
         opacity: .3;
     }
     .bg-pattern{

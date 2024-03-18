@@ -119,6 +119,7 @@ p {
   margin-bottom: 30px;
   font-family: $serif;
   font-size: 21px;
+  line-height: 31px;
 }
 
 button {
@@ -1398,10 +1399,12 @@ textarea {
   border: none;
 }
 
-@media only screen and (min-width: 1024px) {
-  .quote, .wp-block-quote p {
-    font-size: 3.125rem;
-  }
+.quote, .wp-block-quote p {
+  font-size: 35px;
+  font-style: italic;
+  line-height: 44px;
+  letter-spacing: 0.8px;
+  font-family: $serif;
 }
 
 .quote .container {
@@ -1423,7 +1426,7 @@ textarea {
 
 @media only screen and (min-width: 1024px) {
   .wp-block-quote {
-    padding: 3.75rem 0rem 5.625rem;
+    padding: 1.75rem 0rem;
   }
 }
 

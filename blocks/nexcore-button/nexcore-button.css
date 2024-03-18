@@ -42,6 +42,17 @@
 	background-color: #3C3E40;
 }
 
+.arrow-button {
+	font-size: 21px;
+	font-weight: 700;
+	color: #334252!important;
+}
+.arrow-button:hover {
+	font-size: 21px;
+	font-weight: 700;
+	color: #334252!important;
+}
+
 .outline-button {
 	background-color: unset;
 	border: 1px solid #4D545E;
@@ -111,6 +122,7 @@
 	margin-top: 2px;
 	background-size: 26px;
 	width: 30px;
+	filter: none;
 }
 
 .phone-button {
@@ -126,6 +138,10 @@
 	width: 22px;
 	height: 22px;
 	filter: none;
+}
+
+.phone-button .svg-icon {
+	margin-right: 8px;
 }
 
 .icon-link.right .svg-icon {
