@@ -15275,8 +15275,8 @@ hr {
   line-height: normal;
 }
 #main-nav li:last-child a:hover {
-  background-color: #E0BA5C;
-  color: #fff;
+  background-color: #FFFFFF;
+  color: #334252;
 }
 #main-nav .nav-link {
   font-family: "Montserrat", sans-serif;
@@ -15873,6 +15873,20 @@ textarea {
   position: relative;
 }
 
+.mega-menu.nav-item.current-page-ancestor > a, .nav-item.current-menu-item:not(:last-child) > a {
+  position: relative;
+}
+.mega-menu.nav-item.current-page-ancestor > a:before, .nav-item.current-menu-item:not(:last-child) > a:before {
+  content: "";
+  border-bottom: 2px solid #E0BA5C;
+  top: 0;
+  margin: 90px auto 0 auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: calc(100% - 56px);
+}
+
 .mega-menu:hover::after {
   position: absolute;
   bottom: 0px;
@@ -16044,21 +16058,32 @@ textarea {
   }
   .dropdown-pane--column {
     margin-bottom: 1.5625rem;
-  }
-  .dropdown-pane--column:not(.menu-featured-post) {
-    border-bottom: 1px solid white;
     padding-bottom: 1rem;
+    border-bottom: 1px solid white;
     margin-right: 25px;
+  }
+  .dropdown-pane--column:nth-child(3) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .dropdown-pane--column.menu-featured-post {
+    border-bottom: none;
+    margin-right: 0;
+  }
+  .dropdown-pane--column.menu-featured-post .menu-featured-post--more {
+    padding-top: 7px;
   }
   .dropdown-pane--heading, .menu-featured-post--heading {
     font-family: "Tenor Sans", sans-serif;
-    font-size: 22px;
+    font-size: 23px;
     color: #334252;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+  .menu-featured-post--heading {
+    padding-bottom: 10px;
   }
   .dropdown-pane--heading span {
     vertical-align: middle;
@@ -16078,11 +16103,11 @@ textarea {
     display: block;
     padding-left: 1.5625rem;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #334252;
     letter-spacing: normal;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;
   }
   .menu-featured-post--more {
     padding-left: 0px;
@@ -16554,6 +16579,13 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 .type-post .entry-title-post {
   text-transform: unset;
+  color: #BF6B33;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+}
+.type-post .entry-content a {
+  color: #BF6B33;
 }
 .type-post .attachment-post-thumbnail {
   padding-bottom: 80px;
@@ -16563,9 +16595,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   text-align: center;
 }
 .type-post .entry-header-post .post-date {
-  color: #252728;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  color: #334252;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin-bottom: 0px;
 }
 
@@ -16581,20 +16614,43 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   display: none;
 }
 
+h2.related-posts-title, .related-posts-title.h2 {
+  text-align: center;
+  color: #BF6B33;
+  border-top: 1px solid #4D545E;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .related-posts {
   padding-bottom: 80px;
-  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .related-posts .col-md-4 {
+    flex: 1 0 auto;
+  }
 }
 .related-posts .card {
+  background: #ECE6DA;
   padding: 20px;
   border-radius: 0px;
-  border: 2px solid #E0BA5C;
+  border: none;
 }
-.related-posts h3, .related-posts .h3 {
-  color: #E0BA5C;
+.related-posts .card .post-image img {
+  border-radius: 0 !important;
+}
+.related-posts .card-title {
+  color: #BF6B33;
+  text-transform: capitalize;
+  font-size: 23px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 .related-posts p {
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -16611,6 +16667,29 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   width: 100%;
   max-width: 268px;
   margin: 0 auto;
+}
+
+.right-bleed {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  overflow-y: auto;
+}
+.right-bleed img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .right-bleed {
+    left: 0;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .has-blue-color,

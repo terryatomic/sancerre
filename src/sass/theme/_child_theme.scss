@@ -268,8 +268,8 @@ hr {
     line-height: normal;
 
     &:hover {
-      background-color: $gold;
-      color: #fff;
+      background-color: #FFFFFF;
+      color: $dark-navy;
     }
   }
 
@@ -998,6 +998,23 @@ textarea {
   position: relative;
 }
 
+.mega-menu.nav-item.current-page-ancestor, .nav-item.current-menu-item:not(:last-child) {
+  > a {
+    position: relative;
+
+    &:before {
+      content: "";
+      border-bottom: 2px solid $gold;
+      top: 0;
+      margin: 90px auto 0 auto;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: calc(100% - 56px);
+    }
+  }
+}
+
 .mega-menu:hover::after {
   position: absolute;
   bottom: 0px;
@@ -1193,23 +1210,37 @@ textarea {
 
   .dropdown-pane--column {
     margin-bottom: 1.5625rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    margin-right: 25px;
 
-    &:not(.menu-featured-post) {
-      border-bottom: 1px solid white;
-      padding-bottom: 1rem;
-      margin-right: 25px;
+    &:nth-child(3) {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    &.menu-featured-post {
+      border-bottom: none;
+      margin-right: 0;
+
+      .menu-featured-post--more {
+        padding-top: 7px;
+      }
     }
   }
 
   .dropdown-pane--heading, .menu-featured-post--heading {
-    font-family: $secondary-font;
-    font-size: 22px;
+    font-family: $tenor;
+    font-size: 23px;
     color: $dark-navy;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: .05em;
-    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+  }
+
+  .menu-featured-post--heading {
+    padding-bottom: 10px;
   }
 
   .dropdown-pane--heading span {
@@ -1233,11 +1264,11 @@ textarea {
     display: block;
     padding-left: 1.5625rem;
     font-family: $sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: $dark-navy;
     letter-spacing: normal;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .menu-featured-post--more {
@@ -1491,7 +1522,6 @@ textarea {
   margin-bottom: 10px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-
 }
 
 .wpgmza-infowindow p b {
@@ -1816,6 +1846,14 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 
   .entry-title-post {
     text-transform: unset;
+    color: $rust;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+  }
+
+  .entry-content a {
+    color: $rust;
   }
 
   .attachment-post-thumbnail {
@@ -1827,9 +1865,10 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
     text-align: center;
 
     .post-date {
-      color: #252728;
-      text-transform: uppercase;
-      letter-spacing: .2rem;
+      color: $dark-navy;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
       margin-bottom: 0px;
     }
   }
@@ -1851,23 +1890,49 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   display: none;
 }
 
+h2.related-posts-title {
+  text-align: center;
+  color: $rust;
+  border-top: 1px solid $charcoal;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .related-posts {
   padding-bottom: 80px;
+  max-width: 750px;
+  margin: 0 auto;
 
-  .card {
-    padding: 20px;
-    border-radius: 0px;
-    border: 2px solid $gold;
+  @media (min-width: 992px) {
+    .col-md-4 {
+      flex: 1 0 auto;
+    }
   }
 
-  text-align: center;
+  .card {
+    background: $beige;
+    padding: 20px;
+    border-radius: 0px;
+    border: none;
 
-  h3 {
-    color: $gold;
+    .post-image {
+      img {
+        border-radius: 0 !important;
+      }
+    }
+  }
+
+  .card-title {
+    color: $rust;
+    text-transform: capitalize;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -1887,5 +1952,27 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
     width: 100%;
     max-width: 268px;
     margin: 0 auto;
+  }
+}
+
+.right-bleed {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  overflow-y: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    left: 0;
+    position: relative;
+    width: 100%;
   }
 }

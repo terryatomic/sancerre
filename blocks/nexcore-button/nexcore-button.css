@@ -39,7 +39,7 @@
 .outline-button:hover {
 	cursor: pointer;
 	color: #fff!important;
-	background-color: #4D545E;
+	background-color: #3C3E40;
 }
 
 .outline-button {
@@ -114,7 +114,7 @@
 }
 
 .phone-button {
-	padding-left: 35px;
+	padding-left: 20px;
 }
 
 .email-button .svg-icon {

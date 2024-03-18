@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="col-lg-8 col-12 mx-auto">
+<div class="col-lg-9 col-12 mx-auto">
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" >
 
@@ -34,14 +34,16 @@ defined( 'ABSPATH' ) || exit;
 </div>
 
 
+<h2 class="related-posts-title">Discover More</h2>
+
+
 <div class="related-posts">
-    <h2>Discover More</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
     <?php
     $args = array(
         'post__not_in' => array(get_the_ID()), // Exclude the current post
-        'posts_per_page' => 3, // Number of recent posts to display
+        'posts_per_page' => 2, // Number of recent posts to display
         'orderby' => 'date', // Order by date to get the most recent posts
     );
 
