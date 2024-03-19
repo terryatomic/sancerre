@@ -11,7 +11,7 @@
 	padding: .8rem 1.2rem;
 	background-color: #4D545E;
 	text-decoration: none;
-	color: #fff!important;
+	color: #fff !important;
 	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
 	font-weight: 700;
@@ -23,10 +23,9 @@
 	text-align: center;
 }
 
-
 .email-button, .phone-button {
 	background-color: #FFFFFF;
-	color: #4D545E!important;
+	color: #4D545E !important;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -38,19 +37,20 @@
 .email-button:hover,
 .outline-button:hover {
 	cursor: pointer;
-	color: #fff!important;
+	color: #fff !important;
 	background-color: #3C3E40;
 }
 
 .arrow-button {
 	font-size: 21px;
 	font-weight: 700;
-	color: #334252!important;
+	color: #334252 !important;
 }
+
 .arrow-button:hover {
 	font-size: 21px;
 	font-weight: 700;
-	color: #334252!important;
+	color: #334252 !important;
 }
 
 .outline-button {
@@ -69,17 +69,17 @@
 
 .white-button, .share-this {
 	background-color: #FFFFFF;
-	color: #4D545E!important;
+	color: #4D545E !important;
 }
+
 .white-button:hover, .share-this:hover {
 	background-color: #4D545E;
-	color: #FFFFFF!important;
+	color: #FFFFFF !important;
 }
 
-
-.gold-button:hover{
+.gold-button:hover {
 	background-color: #CDA236;
-	color: #FFFFFF!important;
+	color: #FFFFFF !important;
 }
 
 .icon-link {
@@ -158,11 +158,7 @@
 }
 
 @media (max-width:992px) {
-	.button-custom, .phone-button, .arrow-button, .email-button, .outline-button, .icon-link.right, .icon-link.left {
+	/* .button-custom, .phone-button, .arrow-button, .email-button, .outline-button, .icon-link.right, .icon-link.left {
 		padding: 16px 30px;
-	}
-
-	.svg-icon {
-		display: none;
-	}
+	} */
 }

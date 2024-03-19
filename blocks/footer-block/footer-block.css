@@ -14,9 +14,9 @@
 	padding-bottom: 48px;
 }
 
-.footer-container .gform_button{
+.footer-container .gform_button {
 	background-color: #FFFFFF;
-	color: #4D545E!important;
+	color: #4D545E !important;
 }
 
 .footer-container hr {
@@ -40,8 +40,8 @@
 }
 
 .footer-container p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
 }
 
 .footer-container a:hover {
@@ -53,11 +53,11 @@
 }
 
 .footer-container h3 {
-  font-size: 1.25rem;
+	font-size: 1.25rem;
 	padding-bottom: 5px;
 	display: inline-block;
 	border-bottom: 1px solid #ECE6DA;
-  text-transform: uppercase;
+	text-transform: uppercase;
 	line-height: 1.3;
 }
 
@@ -80,6 +80,11 @@
 
 	.footer-container hr {
 		margin: 24px 0px;
+	}
+
+	.footer-container p {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.footer-container .wp-block-group {
