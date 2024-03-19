@@ -28,12 +28,12 @@ $image_array = get_field('background_image');
 $image_url = '';
 if ($image_array) {
     $image_url = $image_array['url']; // Get the URL of the image
-    $class_name .= ' has-bg '; 
+    $class_name .= ' has-bg ';
 }
 
 $alignment = get_field('alignment');
 if ($alignment) {
-    $class_name .= $alignment.' '; 
+    $class_name .= $alignment.' ';
 }
 $bg_color = get_field('background_color');
 $color='';
@@ -45,7 +45,7 @@ if ($bg_color) {
 $ui = uniqid('block-');
 $uid = '.'.$ui;
 $block_id='';
-if(isset($block['anchor'])){
+if (isset($block['anchor'])) {
     $block_id = $block['anchor'];
 }
 ?>

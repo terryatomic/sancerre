@@ -82,7 +82,7 @@ text-transform: uppercase;
     transform-origin: 42% 50%;
     right: 10px; /* Adjust based on your layout */
     top: calc(50% - 15px); /* Center vertically */
-    background: url('img/angle-down-light.svg') no-repeat; /* Add your arrow image */
+    background: url('images/angle-down-light.svg') no-repeat; /* Add your arrow image */
     background-position: right 10px center; /* Adjust as needed */
     background-size: 15px; /* Adjust the size of your arrow */
     z-index: 1;

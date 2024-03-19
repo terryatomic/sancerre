@@ -15,7 +15,8 @@
 	text-align: center;
 	margin-top: 1rem;
 	position: relative;
-	z-index: 1; */
+	z-index: 1;
+	*/
 	/* Center the child elements horizontally */
 }
 
@@ -46,8 +47,8 @@ li.slick-active {
 .slick-slide img {
 	margin: auto;
 	max-width: 990px;
-  height: 680px;
-  object-fit: cover;
+	height: 680px;
+	object-fit: cover;
 }
 
 .slick-arrows-container {
@@ -90,5 +91,9 @@ li.slick-active {
 @media only screen and (max-width: 992px) {
 	.slick-arrows-container {
 		display: none;
+	}
+
+	.slick-slide img {
+		height: 380px;
 	}
 }

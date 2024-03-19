@@ -139,7 +139,7 @@ p {
 button {
   display: inline-flex;
   padding: 8px 16px;
-  background-color: $gold;
+  background-color: $charcoal;
   text-decoration: none;
   color: #fff;
   font-family: $sans-serif;
@@ -615,6 +615,32 @@ figure.wp-block-image img {
     object-fit: cover;
   }
 
+  .hero-band {
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.alignright {
+        float: none !important;
+        margin-inline-start: 0 !important;
+      }
+    }
+  }
+
+  .simple-hero {
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.alignright {
+        float: none !important;
+        margin-inline-start: 0 !important;
+      }
+    }
+  }
+
   .bg-pattern-container {
     .button-container {
       display: flex;
@@ -627,6 +653,31 @@ figure.wp-block-image img {
       }
     }
   }
+
+  .community-header-container > .acf-innerblocks-container {
+    .wp-block-column:first-child {
+      padding-top: 50px;
+    }
+
+    .wp-block-cover__image-background {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .wp-block-cover.is-light {
+      min-height: 400px !important;
+    }
+  }
+
+  .mobile-hide-first-img {
+    .wp-block-column:first-child, > .wp-block-image:first-child {
+      display: none !important;
+    }
+  }
+
+  .mobile-padding {
+    padding: 0 30px !important;
+  }
 }
 
 @media (max-width: 992px) {
@@ -638,6 +689,10 @@ figure.wp-block-image img {
   .bg-align-both .container {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .bg-align-both.mt-mobile > .container {
+    padding-top: 0px;
   }
 
   h1 {
@@ -817,14 +872,6 @@ figure.wp-block-image img {
 .mobile-mt {
   @media (max-width: 768px) {
     margin-top: 0 !important;
-  }
-}
-
-.mobile-hide-first-img {
-  @media (max-width: 768px) {
-    .wp-block-column:first-child {
-      display: none;
-    }
   }
 }
 

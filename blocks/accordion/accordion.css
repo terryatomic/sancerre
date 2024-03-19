@@ -42,7 +42,7 @@
 }
 
 .accordion--row .accordion--row {
-	border:none;
+	border: none;
 }
 
 .accordion--row:last-of-type .accordion--row {
@@ -63,20 +63,18 @@
 	background-color: #86A5A9;
 }
 
-
-
 .accordion button {
 	background-color: transparent;
 	color: #334252;
 	background: #86A5A9;
 	/* desktop H4 */
-	font-family: 'Lato', sans-serif;
-	font-size: 17px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 22px;
 	font-style: normal;
-	font-weight: 700;
-	line-height: 24px;
+	font-weight: 600;
+	line-height: 39px;
 	/* 109.091% */
-	letter-spacing: 1.76px;
+	letter-spacing: -0.02em;
 	text-transform: inherit;
 	padding: 24px;
 	width: 100%;
@@ -84,9 +82,10 @@
 	padding-right: 75px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (max-width: 992px) {
 	.accordion button {
-		font-size: 22px;
+		font-size: 18px;
+		line-height: 21px;
 	}
 }
 
@@ -110,7 +109,6 @@
 	right: 25px;
 	transition: .25s all ease;
 	transform: rotate(180deg);
-
 }
 
 @media only screen and (min-width: 1024px) {
