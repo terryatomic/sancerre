@@ -16211,6 +16211,10 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.nav-link.sticky {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 @media only screen and (max-width: 992px) {
   .navbar.bg-primary {
