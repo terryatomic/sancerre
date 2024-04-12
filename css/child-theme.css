@@ -17,7 +17,7 @@
 }
 
 .has-beige-background-color {
-  background: #ECE6DA !important;
+  background: #F2F0E8 !important;
 }
 
 .has-gold-background-color {
@@ -45,7 +45,7 @@
 }
 
 .has-beige-color {
-  color: #ECE6DA;
+  color: #F2F0E8;
 }
 
 .has-charcoal-color {
@@ -15089,7 +15089,8 @@ h1, .h1 {
   margin-bottom: 0px;
 }
 h1 img, .h1 img {
-  margin-left: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 768px) {
   h1, .h1 {
@@ -15303,7 +15304,7 @@ hr {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #main-nav li:last-child a {
     background: #86A5A9;
     font-size: 18px;
@@ -15730,7 +15731,7 @@ figure.wp-block-image img {
 
 .add-border {
   padding: 20px;
-  background: #ECE6DA;
+  background: #F2F0E8;
 }
 
 .card-block {
@@ -15836,6 +15837,9 @@ figure.wp-block-image img {
 @media (max-width: 768px) {
   body .card-block.left-mobile .is-layout-flow > .aligncenter {
     margin-left: unset !important;
+  }
+  body #content p, body #content h3, body #content .h3, h4, .h4 {
+    text-align: center;
   }
   .wp-block-media-text h2, .wp-block-media-text .h2 {
     text-align: center;
@@ -16167,6 +16171,11 @@ textarea {
   right: 0;
   width: calc(100% - 56px);
 }
+@media (max-width: 991px) {
+  .mega-menu.nav-item.current-page-ancestor > a:before, .nav-item.current-menu-item:not(:last-child) > a:before {
+    content: none;
+  }
+}
 
 .mega-menu:hover::after {
   position: absolute;
@@ -16211,9 +16220,13 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.nav-link.sticky {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.nav-link.shrink {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.nav-link.shrink:before {
+  content: "";
+  margin-top: 70px !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -16290,10 +16303,11 @@ textarea {
   .dropdown-pane.bottom .dropdown-pane--heading {
     font-size: 14px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 12px;
+    padding: 10px 0;
     letter-spacing: 0.09rem;
+    font-family: Montserrat, sans-serif;
   }
   .dropdown-pane.bottom .dropdown-pane--heading:hover {
     background-color: #F7F4EF;
@@ -16649,7 +16663,7 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 #instructions {
-  background-color: #ECE6DA;
+  background-color: #F2F0E8;
   color: #E0BA5C;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -16933,7 +16947,7 @@ h2.related-posts-title, .related-posts-title.h2 {
   }
 }
 .related-posts .card {
-  background: #ECE6DA;
+  background: #F2F0E8;
   padding: 20px;
   border-radius: 0px;
   border: none;

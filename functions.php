@@ -433,7 +433,7 @@ function sancerre_after_setup() {
         array(
 			'name'  => __( 'Beige', 'understrap-child' ),
 			'slug'  => 'beige',
-			'color'	=> '#ECE6DA',
+			'color'	=> '#F2F0E8',
 		),
         
         array(

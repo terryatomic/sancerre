@@ -1,7 +1,7 @@
 acf.add_filter('color_picker_args', function(args, $field) {
 
 	// custom color picker colors
-	args.palettes = ['#4D545E', '#86A5A9', '#617E82', '#ffffff', '#ECE6DA', '#E0BA5C']
+	args.palettes = ['#4D545E', '#86A5A9', '#617E82', '#ffffff', '#F2F0E8', '#E0BA5C']
 
 
 	// return

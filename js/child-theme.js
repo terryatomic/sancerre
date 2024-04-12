@@ -6892,9 +6892,11 @@
 	  anchorLinks.forEach(function (link) {
 	    link.addEventListener('click', handleAnchorLinkClick);
 	  });
-	  var $navheader = $(".nav-link");
+	});
+	jQuery(function ($) {
+	  var $navhead = $(".nav-link");
 	  $(window).on("scroll", function () {
-	    $navheader.toggleClass("sticky", $(window).scrollTop() > 60);
+	    $navhead.toggleClass("shrink", $(window).scrollTop() > 100);
 	  });
 	});
 

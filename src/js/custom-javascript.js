@@ -171,11 +171,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	anchorLinks.forEach(function(link) {
 		link.addEventListener('click', handleAnchorLinkClick);
 	});
-  
-  var $navheader = $(".nav-link");
-    $(window).on("scroll", function(){
-        $navheader.toggleClass("sticky", $(window).scrollTop() > 60);
-    });
-
 
 })
+
+jQuery(function($) {
+	var $navhead = $(".nav-link");
+	$(window).on("scroll", function() {
+		$navhead.toggleClass("shrink", $(window).scrollTop() > 100);
+	});
+
+});
