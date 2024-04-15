@@ -838,6 +838,18 @@ figure.wp-block-image img {
     flex-direction: column;
     background: white;
 
+    &.p-lr-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .responsive-image-block.img-stretch {
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+
     &.explore-image-container {
       padding: 0;
     }
@@ -1316,7 +1328,7 @@ textarea {
       content: "";
       border-bottom: 2px solid $gold;
       top: 0;
-      margin: 90px auto 0 auto;
+      margin: 70px auto 0 auto;
       left: 0;
       position: absolute;
       right: 0;
@@ -1371,17 +1383,20 @@ textarea {
 }
 
 .nav-link {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 
   &.shrink {
     padding-top: 38px;
     padding-bottom: 38px;
 
-    &:before {
-      content: "";
-      margin-top: 70px !important;
-    }
+    // &:before {
+    //   content: "";
+    //   margin-top: 70px !important;
+    // }
+ 
   }
 }
 

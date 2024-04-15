@@ -45,12 +45,21 @@
 	font-size: 21px;
 	font-weight: 700;
 	color: #334252 !important;
+	background-color: inherit;
+	text-transform: none;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .arrow-button:hover {
 	font-size: 21px;
 	font-weight: 700;
 	color: #334252 !important;
+	background-color: inherit;
+	text-transform: none;
+	padding-left: 0;
+	padding-right: 0;
+
 }
 
 .outline-button {

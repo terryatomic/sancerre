@@ -439,7 +439,7 @@ function sancerre_after_setup() {
         array(
 			'name'  => __( 'Blue', 'understrap-child' ),
 			'slug'  => 'blue',
-			'color'	=> '#86A5A9',
+			'color'	=> '#aeccd3',
 		),
         array(
 			'name'  => __( 'Dark Navy', 'understrap-child' ),

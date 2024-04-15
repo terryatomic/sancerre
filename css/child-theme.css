@@ -15743,6 +15743,16 @@ figure.wp-block-image img {
   flex-direction: column;
   background: white;
 }
+.card-block .wp-block-column.p-lr-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.card-block .wp-block-column .responsive-image-block.img-stretch {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
 .card-block .wp-block-column.explore-image-container {
   padding: 0;
 }
@@ -16165,7 +16175,7 @@ textarea {
   content: "";
   border-bottom: 2px solid #E0BA5C;
   top: 0;
-  margin: 90px auto 0 auto;
+  margin: 70px auto 0 auto;
   left: 0;
   position: absolute;
   right: 0;
@@ -16217,16 +16227,12 @@ textarea {
 }
 
 .nav-link {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 .nav-link.shrink {
   padding-top: 38px;
   padding-bottom: 38px;
-}
-.nav-link.shrink:before {
-  content: "";
-  margin-top: 70px !important;
 }
 
 @media only screen and (max-width: 992px) {

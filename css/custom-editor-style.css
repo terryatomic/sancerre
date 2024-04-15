@@ -407,7 +407,7 @@ progress {
 }
 
 :root {
-  --bs-blue: #86A5A9;
+  --bs-blue: #aeccd3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -847,7 +847,7 @@ progress {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #86A5A9;
+  --bs-blue: #aeccd3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -5093,16 +5093,16 @@ progress {
 }
 .has-blue-color,
 .has-blue-color:visited {
-  color: #86A5A9;
+  color: #aeccd3;
 }
 
 .has-blue-background-color {
-  background-color: #86A5A9;
-  border-color: #86A5A9;
+  background-color: #aeccd3;
+  border-color: #aeccd3;
 }
 
 .wp-block-button:hover .wp-block-button__link.has-white-background-color.has-blue-color {
-  color: #86A5A9;
+  color: #aeccd3;
 }
 
 .has-indigo-color,
