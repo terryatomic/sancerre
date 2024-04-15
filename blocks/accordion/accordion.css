@@ -60,13 +60,13 @@
 }
 
 .accordion--title.ac-q:hover {
-	background-color: #86A5A9;
+	background-color: #aeccd3;
 }
 
 .accordion button {
 	background-color: transparent;
 	color: #334252;
-	background: #86A5A9;
+	background: #aeccd3;
 	/* desktop H4 */
 	font-family: "Montserrat", sans-serif;
 	font-size: 22px;

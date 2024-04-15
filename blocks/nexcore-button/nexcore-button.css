@@ -59,7 +59,6 @@
 	text-transform: none;
 	padding-left: 0;
 	padding-right: 0;
-
 }
 
 .outline-button {
@@ -151,6 +150,10 @@
 
 .phone-button .svg-icon {
 	margin-right: 8px;
+}
+
+.email-button:hover .svg-icon, .phone-button:hover .svg-icon {
+	filter: brightness(0) invert(1);
 }
 
 .icon-link.right .svg-icon {
