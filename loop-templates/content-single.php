@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="col-lg-9 col-12 mx-auto">
+<div class="col-lg-12 col-12 mx-auto">
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" >
 
@@ -67,7 +67,15 @@ defined( 'ABSPATH' ) || exit;
                             <?php
                             $excerpt = get_the_excerpt(); // Get the raw excerpt
                             $stripped_excerpt = strip_tags($excerpt); // Strip HTML tags and formatting
-                            echo $stripped_excerpt; // Output the stripped excerpt
+                            $words = str_word_count($stripped_excerpt, 1); // Split the excerpt into an array of words
+                            $limited_excerpt = implode(' ', array_slice($words, 0, 20)); // Take the first 20 words and join them back into a string
+
+                            // Add an ellipsis if the excerpt contains more than 20 words
+                            if (count($words) > 20) {
+                                $limited_excerpt .= '...';
+                            }
+
+                            echo $limited_excerpt; // Output the limited excerpt
                             ?>
                         </p>   
                     </div>
