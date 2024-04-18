@@ -45,11 +45,9 @@
 .bg-align-both .bg-pattern-container {
 	/* width: calc(100% - 20%); */
 	/* width: calc(100% - 10%); */
-
 	margin: auto;
 	/* padding: 0 100px; */
 	/* padding: 0 50px; */
-
 }
 
 .bg-align-right .bg-pattern-container,
@@ -121,6 +119,18 @@
 	.bg-align-both .bg-pattern-container {
 		border-left: unset;
 		border-right: unset;
+	}
+
+	@media (max-width:992px) {
+		.page-id-17 .bg-align-both .acf-innerblocks-container {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		
+		.page-id-17 .bg-align-both .acf-innerblocks-container .wp-block-media-text__content {
+			padding-left: 16px!important;
+			padding-right: 16px!important;
+		}
 	}
 
 	@media (max-width:768px) {

@@ -1,41 +1,50 @@
-
 .amenity-list .acf-innerblocks-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
-    grid-auto-rows: auto; /* Sets the rows to automatically size based on content */
-    gap: 10px; /* Adjust the gap between items as needed */
-    overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* Creates 3 columns */
+	grid-auto-rows: auto;
+	/* Sets the rows to automatically size based on content */
+	gap: 10px;
+	/* Adjust the gap between items as needed */
+	overflow: hidden;
 }
 
-.amenity-list ul{
-    list-style: none;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
+.amenity-list ul {
+	list-style: none;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
 }
-.amenity-list li{
-    padding: 8px;
+
+.amenity-list li {
+	padding: 8px 0;
+	line-height: 1.3;
 }
-.amenity-list li em{
-    font-size: 16px;
+
+.amenity-list li em {
+	font-size: 16px;
 }
-.amenity-list button{
-    display: none;
-    margin: auto;
-    margin-top: 15px;
+
+.amenity-list button {
+	display: none;
+	margin: auto;
+	margin-top: 15px;
 }
+
 @media screen and (max-width: 992px) {
-    .amenity-list .acf-innerblocks-container{
-        grid-template-columns: 1fr; /* 1 column for smaller screens */
-    }
-    .amenity-list button{
-        display: block;
-        margin-bottom: 16px;
-    }
-}
-@media screen and (min-width: 993px) {
-    .amenity-list .acf-innerblocks-container {  
-        height: unset !important;
-    }
+	.amenity-list .acf-innerblocks-container {
+		grid-template-columns: 1fr;
+		/* 1 column for smaller screens */
+	}
+
+	.amenity-list button {
+		display: block;
+		margin-bottom: 16px;
+	}
 }
 
+@media screen and (min-width: 993px) {
+	.amenity-list .acf-innerblocks-container {
+		height: unset !important;
+	}
+}

@@ -15135,6 +15135,12 @@ h2.h2-small, .h2-small.h2 {
   font-weight: 500;
   line-height: 40px;
 }
+@media (max-width: 992px) {
+  h2.h2-small, .h2-small.h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
 h3, .h3 {
   font-size: 38px;
@@ -15142,12 +15148,16 @@ h3, .h3 {
   font-weight: 400;
   line-height: 45px;
   font-family: "Tenor Sans", sans-serif;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 992px) {
   h3, .h3 {
     font-size: 24px;
     line-height: 32px;
   }
+}
+h3 a, .h3 a {
+  text-decoration: none;
 }
 
 .roobrik-widget-header {
@@ -15242,7 +15252,7 @@ hr {
   position: relative;
   right: calc(-1 * (50vw - 100%) / 1);
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .break-right figure {
     right: 0;
   }
@@ -16757,6 +16767,20 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   display: block;
 }
 
+@media (max-width: 992px) {
+  .single-communities .wp-block-column h2.h2-small, .single-communities .wp-block-column .h2-small.h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .single-communities .wp-block-column .button-container {
+    text-align: center;
+  }
+  .single-communities p.has-text-align-center strong br {
+    display: block;
+  }
+}
+
 #archive-wrapper, #index-wrapper {
   padding: 80px 0px;
 }
@@ -17101,7 +17125,7 @@ body.wp-admin .alignfull {
 }
 
 @media (max-width: 400px) {
-  h2.has-rust-color, .has-rust-color.h2, .hero-band h1, .hero-band .h1 {
+  h2.has-rust-color, .has-rust-color.h2, .hero-band h1, .hero-band .h1, .wp-block-heading.has-text-align-center {
     padding-left: 0.85rem;
     padding-right: 0.85rem;
   }

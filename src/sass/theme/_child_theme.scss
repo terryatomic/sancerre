@@ -113,6 +113,11 @@ h2 {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
+
+    @media (max-width: 992px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 }
 
@@ -122,10 +127,15 @@ h3 {
   font-weight: 400;
   line-height: 45px;
   font-family: $secondary-font;
+  letter-spacing: -0.02em;
 
   @media (max-width: 992px) {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -227,7 +237,7 @@ hr {
     position: relative;
     right: calc(-1 * (50vw - 100%)/1);
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       right: 0;
     }
   }
@@ -2032,7 +2042,7 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
 }
 
 .sms-share {
-  display: none!important;
+  display: none !important;
 }
 
 .macos .sms-share,
@@ -2041,7 +2051,25 @@ span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
   display: block;
 }
 
+// Communities
 
+.single-communities {
+  @media (max-width: 992px) {
+    .wp-block-column h2.h2-small {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wp-block-column .button-container {
+      text-align: center;
+    }
+
+    p.has-text-align-center strong br {
+      display: block;
+    }
+  }
+}
 
 // Posts/ Archive
 #archive-wrapper, #index-wrapper {
@@ -2436,7 +2464,7 @@ body.wp-admin {
 }
 
 @media (max-width: 400px) {
-  h2.has-rust-color, .hero-band h1 {
+  h2.has-rust-color, .hero-band h1, .wp-block-heading.has-text-align-center {
     padding-left: .85rem;
     padding-right: .85rem;
   }
