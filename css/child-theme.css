@@ -15356,6 +15356,8 @@ hr {
   text-transform: uppercase;
   padding-left: 28px;
   padding-right: 28px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 768px) {
   #main-nav .nav-link {

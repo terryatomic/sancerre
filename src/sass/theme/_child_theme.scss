@@ -347,6 +347,8 @@ hr {
     text-transform: uppercase;
     padding-left: 28px;
     padding-right: 28px;
+    position: relative;
+    z-index: 1;
 
     @media (max-width: 768px) {
       font-size: 18px;
