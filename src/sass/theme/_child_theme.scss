@@ -2025,8 +2025,23 @@ textarea {
 }
 
 span.a2a_s_link#a2a_copy_link_icon, span.a2a_w_link#a2a_copy_link_icon {
-  background-color: $gold;
+  background-color: $white!important;
 }
+
+.a2a_menu a.a2a_i:not(:has(.a2a_s_email, .a2a_s_link)) {
+  display: none !important;
+}
+
+#a2apage_mini_services:has(.a2a_i.sms-share) a:nth-child(2) {
+  display: none!important;
+}
+
+.macos .a2a_menu a.a2a_i:has(.a2a_s_sms),
+.android .a2a_menu a.a2a_i:has(.a2a_s_sms),
+.ios .a2a_menu a.a2a_i:has(.a2a_s_sms) {
+  display: block !important;
+}
+
 
 #instructions {
   background-color: $beige;
